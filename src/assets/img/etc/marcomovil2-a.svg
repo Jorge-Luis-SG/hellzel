@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="576" height="904" viewBox="0 0 576 904">
+  <g id="Grupo_97" data-name="Grupo 97" transform="translate(-54.196 -183.2)">
+    <g id="Grupo_40" data-name="Grupo 40" transform="translate(56.196 185.687)">
+      <rect id="Rectángulo_23" data-name="Rectángulo 23" width="524.639" height="854.491" transform="translate(23.304 21.813)" fill="none" stroke="#fcf5dd" stroke-miterlimit="10" stroke-width="4"/>
+      <rect id="Rectángulo_24" data-name="Rectángulo 24" width="23" height="23" transform="translate(0 -0.486)" fill="none" stroke="#fcf5dd" stroke-miterlimit="10" stroke-width="4"/>
+      <rect id="Rectángulo_25" data-name="Rectángulo 25" width="23" height="23" transform="translate(0 876.514)" fill="none" stroke="#fcf5dd" stroke-miterlimit="10" stroke-width="4"/>
+      <rect id="Rectángulo_26" data-name="Rectángulo 26" width="23" height="23" transform="translate(549 -0.486)" fill="none" stroke="#fcf5dd" stroke-miterlimit="10" stroke-width="4"/>
+      <rect id="Rectángulo_27" data-name="Rectángulo 27" width="23" height="23" transform="translate(549 876.514)" fill="none" stroke="#fcf5dd" stroke-miterlimit="10" stroke-width="4"/>
+    </g>
+    <path id="Trazado_24" data-name="Trazado 24" d="M579.285,991.982c.12,0,.235.049.354.058V277.784c-.119.009-.234.058-.354.058-7.823,0-14.165-20.9-14.165-46.676,0-.394.015-.775.018-1.167H117.165c0,25.779-6.342,46.676-14.165,46.676V990.815c7.823,0,14.165,20.9,14.165,46.676H565.138C565.328,1012.258,571.582,991.982,579.285,991.982Z" transform="translate(0)" fill="none" stroke="#fcf5dd" stroke-miterlimit="10" stroke-width="2"/>
+  </g>
+</svg>

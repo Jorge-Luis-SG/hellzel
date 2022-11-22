@@ -1,0 +1,12 @@
+img {
+  position: fixed;
+  right: 3rem;
+  bottom: 1rem;
+  width: 110px;
+  z-index: 999999999;
+  cursor: pointer;
+  @media screen and (max-width: 767px) {
+    width: 90px;
+    right: 1.5rem;
+  }
+}

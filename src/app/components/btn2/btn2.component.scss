@@ -1,0 +1,21 @@
+@import "../../../styles.scss";
+
+button {
+  background-color: transparent;
+  color: $cake2;
+  border-radius: 1.2rem;
+  border: 1px solid $cake2;
+  width: 340px;
+  padding: 0.65rem 0;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  
+  &:hover {
+    background-color: $cake2;
+    color: $red2;
+  }
+  @media screen and (max-width: 500px) {
+    width: 250px;
+    font-size: 0.7rem;
+  }
+}

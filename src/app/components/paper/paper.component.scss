@@ -1,0 +1,50 @@
+@import "../../../styles.scss";
+
+.paper {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 450px;
+  height: 645px;
+  margin: auto;
+  background-color: transparent;
+  background-image: url(../../../assets/img/etc/paper.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  @media screen and (max-width: 540px) {
+    width: 320px;
+    height: 465px;
+  }
+
+  div {
+    max-width: 350px;
+    width: 100%;
+    margin: 0 auto;
+    @media screen and (max-width: 540px) {
+      max-width: 280px;
+      height: 80%;
+      margin: auto;
+      overflow-y: auto;
+    }
+  }
+  &-title {
+    font-family: "Mr Dafoe";
+    color: $red1;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    margin: 6rem 0 1.7rem;
+    @media screen and (max-width: 540px) {
+      font-size: 2rem;
+      line-height: 2rem;
+      margin: 1rem 0 1.7rem;
+    }
+  }
+  &-desc {
+    font-size: 1.15rem;
+    @media screen and (max-width: 540px) {
+      font-size: 1rem;
+    }
+  }
+}

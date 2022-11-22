@@ -1,0 +1,62 @@
+@import "../../../styles.scss";
+
+.container {
+  max-width: 400px;
+  margin: 0rem auto;
+  .title {
+    font-family: "Mr Dafoe";
+    color: $red1;
+    font-size: 5.3rem;
+    line-height: 4.5rem;
+    margin-bottom: 0;
+    @media screen and (max-width: 992px) {
+      font-size: 3.5rem;
+      line-height: 3rem;
+    }
+    @media screen and (max-width: 560px) {
+      font-size: 2.5rem;
+    }
+  }
+  .subtitle {
+    position: relative;
+    text-align: center;
+    max-width: 190px;
+    margin: 0.85rem auto 1.2rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    font-family: "Josefin Sans";
+    @media screen and (max-width: 992px) {
+      font-size: 1.3rem;
+    }
+    &::after,
+    &::before {
+      content: "";
+      height: 2px;
+      width: 30px;
+      position: relative;
+      background-color: black;
+    }
+    &::before {
+      left: -1rem;
+    }
+    &::after {
+      right: -1rem;
+    }
+  }
+
+  .info {
+    font-family: "Josefin Sans";
+    font-weight: 400;
+    max-width: 301px;
+    margin: 0 auto;
+  }
+  .info2 {
+    margin-top: 2rem;
+  }
+  @media screen and (max-width: 992px) {
+    .info,.info2 {
+      font-size: .85rem;
+    }
+
+  }
+}

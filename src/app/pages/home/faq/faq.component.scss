@@ -1,0 +1,96 @@
+@import "../../../../styles.scss";
+
+.faq {
+  background-color: #000000;
+  position: relative;
+  overflow: hidden;
+  margin-top: -7rem;
+  &-box1 {
+    position: relative;
+    min-height: 940px;
+    .hands {
+      height: 110%;
+      width: 996px;
+      margin-top: -4rem;
+      object-fit: cover;
+      @media screen and (max-width: 992px) {
+        width: 100%;
+        opacity: 0.5;
+      }
+      @media screen and (max-width: 730px) {
+        margin-top: -4rem;
+      }
+    }
+  }
+  &-box2 {
+    @media screen and (max-width: 992px) {
+      position: absolute;
+      transform: translateY(155px);
+    }
+    div {
+      max-width: 400px;
+      position: relative;
+      z-index: 100;
+      transform: translateY(-20px);
+      h3 {
+        font-family: "Mr Dafoe";
+        font-size: 5.3rem;
+        line-height: 4.5rem;
+        margin-bottom: 0;
+        @media screen and (max-width: 992px) {
+          font-size: 3.5rem;
+          line-height: 3rem;
+        }
+        @media screen and (max-width: 560px) {
+          font-size: 2.5rem;
+        }
+      }
+      h3,
+      p {
+        color: $cake;
+      }
+      p {
+        position: relative;
+        text-align: center;
+        max-width: 270px;
+        margin: 2rem auto 2.5rem;
+        font-size: 1.15rem;
+        @media screen and (max-width: 560px) {
+          font-size: 1rem;
+        }
+        &::after,
+        &::before {
+          content: "";
+          height: 2px;
+          width: 30px;
+          position: absolute;
+          background-color: $cake;
+        }
+        &::before {
+          left: 0px;
+        }
+        &::after {
+          right: 0px;
+        }
+      }
+    }
+  }
+  &-screen {
+    position: fixed;
+    top: 0;
+    user-select: none;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    background-color: #00000095;
+    z-index: 999;
+
+  }
+  &-screen.active {
+    user-select: all;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+
+  }
+}

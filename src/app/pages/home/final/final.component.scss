@@ -1,0 +1,213 @@
+@import "../../../../styles.scss";
+
+.final {
+  background-image: url(../../../../assets/img/backgrounds/bg7.svg);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  padding-top: 6.8rem;
+  margin-top: -8.2%;
+  position: relative;
+  z-index: 100;
+  margin-bottom: 3rem;
+  h3 {
+    color: $cake;
+    max-width: 850px;
+    margin: 4rem auto 3rem;
+    font-family: "Mr Dafoe";
+    font-size: 5.3rem;
+    line-height: 4.5rem;
+    @media screen and (max-width: 992px) {
+      font-size: 4rem;
+      line-height: 4rem;
+    }
+    @media screen and (max-width: 767px) {
+      font-size: 3rem;
+      line-height: 2.7rem;
+    }
+     @media screen and (max-width: 470px) {
+      font-size: 2rem;
+      line-height: 2rem;
+    }
+  }
+  p {
+    max-width: 440px;
+    margin: 0 auto;
+    color: $cake;
+  }
+  .letter {
+    max-width: 800px;
+    width: 450px;
+    margin-bottom: 5rem;
+    transition: all 0.5s;
+    opacity: 1;
+    object-fit: contain;
+    @media screen and (max-width: 767px) {
+      max-width: 470px;
+      @media screen and (max-width: 470px) {
+        max-width: 320px;
+      }
+    }
+  }
+  .letter.active {
+    opacity: 0;
+    width: 0 !important;
+  }
+
+  .paper {
+    background-color: transparent;
+    background-image: url(../../../../assets/img/etc/contenedor4.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 645px;
+    width: 0;
+    padding: 0 4rem;
+    opacity: 0;
+    user-select: none;
+    transition: all 0.5s;
+    &-container {
+      height: 730px;
+    }
+    @media screen and (max-width: 1100px) {
+      height: 455px;
+      width: 767px;
+      &-container {
+        height: 455px;
+        width: 767px;
+      }
+      @media screen and (max-width: 767px) {
+        background-image: url(../../../../assets/img/etc/contenedor4v.png);
+        height: 770px;
+        width: 470px;
+        &-container {
+          height: 770px;
+          width: 470px;
+        }
+        @media screen and (max-width: 470px) {
+          height: 560px;
+          width: 320px;
+          padding: 0 1.75em;
+          &-container {
+            height: 560px;
+            width: 320px;
+          }
+        }
+      }
+    }
+
+    &-box1 {
+      div {
+        max-width: 500px;
+        width: 100%;
+        margin: 0 auto;
+        h4 {
+          color: $red1;
+          max-width: 850px;
+          margin: -4.5rem auto 1.5rem;
+          font-family: "Mr Dafoe";
+          font-size: 2.4rem;
+          line-height: 2.3rem;
+          @media screen and (max-width: 1100px) {
+            font-size: 2rem;
+            line-height: 2rem;
+            margin: -1.5rem auto 1.5rem;
+            @media screen and (max-width: 767px) {
+              margin: 0 auto 1.5rem;
+              @media screen and (max-width: 470px) {
+                font-size: 1.5rem;
+                line-height: 1.5rem;
+              }
+            }
+          }
+        }
+        ul {
+          li {
+            font-family: "Josefin Sans";
+            font-weight: 400;
+            list-style: none;
+            color: $gray;
+            border: 1px solid $gray;
+            border-radius: 1.52rem;
+            padding: 0.6rem;
+            font-size: 1.2rem;
+            margin-top: 1.1rem;
+            cursor: pointer;
+            &:hover {
+              background-color: #ff660e70;
+              color: black;
+            }
+            @media screen and (max-width: 1100px) {
+              font-size: 0.9rem;
+              @media screen and (max-width: 470px) {
+                padding: 0.3rem;
+                font-size: 0.85rem;
+                margin-top: 0.45rem;
+              }
+            }
+          }
+        }
+      }
+    }
+    &-box2 {
+      div {
+        img {
+          width: 380px;
+          cursor: pointer;
+          transition: filter 0.2s;
+          &:hover {
+            filter: drop-shadow(0px 0px 10px $orange);
+            transition: filter 0.2s;
+          }
+          @media screen and (max-width: 1100px) {
+            width: 270px;
+            @media screen and (max-width: 470px) {
+              width: 190px;
+              transform: translateY(-10px);
+            }
+          }
+        }
+      }
+    }
+    .next {
+      bottom: -10px;
+      cursor: pointer;
+      &:hover {
+        img {
+          transition: filter 0.2s;
+          filter: drop-shadow(0px 0px 10px $orange);
+        }
+      }
+      @media screen and (max-width: 1100px) {
+        bottom: -35px;
+      }
+      img {
+        transform: translateY(25px);
+        width: 155px;
+        transition: filter 0.2s;
+        @media screen and (max-width: 1100px) {
+          width: 130px;
+        }
+      }
+    }
+  }
+  .paper.active {
+    opacity: 1;
+    user-select: all;
+    width: 1100px;
+    @media screen and (max-width: 1100px) {
+      height: 455px;
+      width: 767px;
+      @media screen and (max-width: 767px) {
+        background-image: url(../../../../assets/img/etc/contenedor4v.png);
+        height: 770px;
+        width: 470px;
+        @media screen and (max-width: 470px) {
+          height: 560px;
+          width: 320px;
+          padding: 0 1.75em;
+        }
+      }
+    }
+  }
+}
