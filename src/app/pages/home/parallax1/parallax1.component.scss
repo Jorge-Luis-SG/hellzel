@@ -59,7 +59,7 @@ h3 {
     transition: width 1s;
     &-item {
       width: 260px;
-      transform: translate(20px, 265px);
+      transform: translate(20px, 196px);
       position: sticky;
       top: 0;
       left: calc(50% - 130px);
@@ -67,16 +67,6 @@ h3 {
       transition: width 1s;
       max-width: 700px;
       display: flex;
-
-
-
-      // width: 260px;
-      // transform: translate(20px,255px);
-      // position: sticky;
-      // left: calc(50% - 130px);
-      // max-width: 700px;
-      // top: 0;
-      // z-index: 5;
     }
   }
 
@@ -89,57 +79,16 @@ h3 {
       margin: 0 auto;
       height: 470px;
     }
-
     &-nft {
-      position: relative;
       margin-bottom: 13rem;
-      transform: translateY(-130px);
+      // transform: translateY(-130px);
       .forehead {
         width: 460px;
-        transform: translate(55px, 670px);
-        z-index: 4;
+        transform: translate(55px, 450px);
       }
       .face {
         width: 540px;
-        z-index: 6;
-        transform: translateY(-294px);
-      }
-      img {
-        position: relative;
-      }
-      @media screen and (max-width: 992px) {
-        .forehead {
-          width: 264px;
-          transform: translate(35px, 0);
-          margin-bottom: -11rem;
-          z-index: 3;
-        }
-        .brain {
-          width: 200px;
-          transform: translateX(25px);
-        }
-        .face {
-          width: 340px;
-          transform: translate(0, 0);
-          margin-top: -7rem;
-        }
-        @media screen and (max-width: 500px) {
-          .forehead {
-            width: 230px;
-            transform: translate(29px, 0);
-            margin-bottom: -11rem;
-            z-index: 3;
-          }
-          .brain {
-            width: 185px;
-            transform: translateX(25px);
-          }
-          .face {
-            width: 300px;
-            transform: translate(0, 0);
-            margin-top: -5rem;
-          }
-        }
+        transform: translateY(-453px);
       }
     }
   }
@@ -225,7 +174,7 @@ h3 {
         .diagnosis {
           position: relative;
           z-index: 10;
-          transition: transform .65s;
+          transition: transform 0.65s;
           @media screen and (max-width: 992px) {
             position: absolute;
             z-index: 100;
@@ -236,7 +185,8 @@ h3 {
           &-two {
             transform: translateX(195%);
           }
-          &-one.active, &-two.active{
+          &-one.active,
+          &-two.active {
             transform: translateX(0);
           }
           ul {
@@ -363,63 +313,11 @@ h3 {
     @media screen and (max-width: 992px) {
       margin: 11rem auto -2rem;
     }
-    &-nft {
-      //   img {
-      //     &:first-child {
-      //       width: 379px;
-      //       transform: translate(39px, 271px);
-      //     }
-      //     &:nth-child(2) {
-      //       width: 260px;
-      //       transform: translate(20px, 70px);
-      //     }
-      //     &:last-child {
-      //       width: 540px;
-      //       z-index: 3;
-      //       transform: translateY(-151px);
-      //     }
-      //     @media screen and (max-width: 992px) {
-      //       &:first-child {
-      //         width: 237px;
-      //         transform: translate(25px, 5px);
-      //         margin-bottom: -11rem;
-      //         z-index: 3;
-      //       }
-      //       &:nth-child(2) {
-      //         width: 200px;
-      //         transform: translateX(25px);
-      //       }
-      //       &:last-child {
-      //         width: 340px;
-      //         transform: translate(0, 0);
-      //         margin-top: -7rem;
-      //       }
-      //       @media screen and (max-width: 500px) {
-      //         &:first-child {
-      //           width: 230px;
-      //           transform: translate(29px, 0);
-      //           margin-bottom: -11rem;
-      //           z-index: 3;
-      //         }
-      //         &:nth-child(2) {
-      //           width: 185px;
-      //           transform: translateX(25px);
-      //         }
-      //         &:last-child {
-      //           width: 300px;
-      //           transform: translate(0, 0);
-      //           margin-top: -5rem;
-      //         }
-      //       }
-      //     }
-      //   }
-    }
   }
   &-box4 {
     max-width: 600px;
     margin-left: auto;
     position: relative;
-    z-index: 5;
     @media screen and (max-width: 992px) {
       margin-left: 0;
       margin: 0 auto;
@@ -429,20 +327,14 @@ h3 {
     &-nft {
       position: relative;
       margin-bottom: 13rem;
-      transform: translateY(-130px);
       .forehead {
         width: 460px;
         transform: translate(66px, -206px);
-        z-index: 4;
       }
       .face {
         width: 540px;
         z-index: 6;
-        transform: translateY(1600px);
-      }
-      img {
-        position: relative;
-        z-index: 9999999;
+        transform: translateY(1505px);
       }
       @media screen and (max-width: 992px) {
         .forehead {
@@ -459,23 +351,6 @@ h3 {
           width: 340px;
           transform: translate(0, 0);
           margin-top: -7rem;
-        }
-        @media screen and (max-width: 500px) {
-          .forehead {
-            width: 230px;
-            transform: translate(29px, 0);
-            margin-bottom: -11rem;
-            z-index: 3;
-          }
-          .brain {
-            width: 185px;
-            transform: translateX(25px);
-          }
-          .face {
-            width: 300px;
-            transform: translate(0, 0);
-            margin-top: -5rem;
-          }
         }
       }
     }
