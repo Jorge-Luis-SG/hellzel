@@ -35,13 +35,13 @@ export class HomeComponent implements OnInit {
   };
 
   animationCreated(animationItem: AnimationItem): void {
-    console.log(animationItem);
+    // console.log(animationItem);
   }
   roapActive = false;
 
   constructor() {
     window.onscroll = function (e) {
-      console.log(window.scrollY); // Value of scroll Y in px
+      // console.log(window.scrollY); // Value of scroll Y in px
     };
 
 
@@ -59,7 +59,7 @@ export class HomeComponent implements OnInit {
 
   roap1() {
     $('#roap2').removeClass('active');
-    $('.roap').removeClass('active');
+    $('#roap1').addClass('active');
     this.roapActive = false;
     this.anim.setDirection(-1);
     this.anim.play();
@@ -68,7 +68,7 @@ export class HomeComponent implements OnInit {
   }
   roap2() {
     $('#roap2').addClass('active');
-    $('.roap').addClass('activeRoap');
+    $('#roap1').removeClass('active');
     this.roapActive = true;
     this.anim.setDirection(1);
     this.anim.play();

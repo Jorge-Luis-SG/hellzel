@@ -1,0 +1,21 @@
+@import "../../../styles.scss";
+
+.spinner {
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000;
+  position: absolute;
+  z-index: 9999999999999;
+  h1 {
+    color: #ffffff;
+    font-family: "Mr Dafoe";
+    font-size: 4rem;
+    transform: translateY(30px);
+    margin-top: -6%;
+  }
+  img {
+    width: 280px;
+    height: 280px;
+    z-index: 9999999999;
+  }
+}

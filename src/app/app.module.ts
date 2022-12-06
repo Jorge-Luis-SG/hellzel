@@ -20,6 +20,12 @@ import { WelcomeComponent } from './pages/welcome/welcome.component';
 import { PaperComponent } from './components/paper/paper.component';
 import { FaqComponent } from './pages/home/faq/faq.component';
 import { FinalComponent } from './pages/home/final/final.component';
+import { PaisesSelectComponent } from './components/paises-select/paises-select.component';
+import { SpinnerComponent } from './components/spinner/spinner.component';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { MintComponent } from './pages/mint/mint.component';
+// import { SpinnerInterceptor } from './components/spinner/spinner.interceptor';
+
 
 
 export function playerFactory() {
@@ -41,7 +47,10 @@ export function playerFactory() {
     WelcomeComponent,
     PaperComponent,
     FaqComponent,
-    FinalComponent
+    FinalComponent,
+    PaisesSelectComponent,
+    SpinnerComponent,
+    MintComponent
   ],
   imports: [
     BrowserModule,
@@ -49,9 +58,12 @@ export function playerFactory() {
     FormsModule,
     SwiperModule,
     NgxParallaxScrollModule,
-    LottieModule.forRoot({ player: playerFactory })
+    HttpClientModule,
+    LottieModule.forRoot({ player: playerFactory }),
   ],
-  providers: [],
+  providers: [
+    // {provide: HTTP_INTERCEPTORS, useClass: SpinnerInterceptor, multi: true }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -10,11 +10,15 @@ ul {
 * {
   color: $yellow;
 }
+a {
+  text-decoration: none;
+  color: $yellow;
+}
 
 .header {
   &-welcome {
     position: absolute;
-    z-index: 9999;
+    z-index: 999999999;
     left: 0;
     right: 0;
     width: 100%;
@@ -23,6 +27,9 @@ ul {
     background: $black1 url(../../../assets/img/backgrounds/bg-welcome.svg);
     background-position: center;
     background-size: cover;
+    @media screen and (max-width: 992px) {
+      margin-left: 0;
+    }
     &-container {
       img {
         max-width: 500px;
@@ -61,22 +68,39 @@ ul {
     width: 250px;
     height: 250px;
     border-radius: 50%;
-    transform: translateY(-115px);
-    transition: all .5s;
+    transform: translate(0,-115px);
+    transition: all 0.5s;
+    pointer-events: none;
+    @media screen and (max-width: 992px) {
+      top: 1rem;
+      width: 60px;
+      height: 60px;
+      align-items: center !important;
+      position: absolute;
+      transform: translate(12px, 0px);
+    }
     img {
       max-width: 150px;
       width: 90%;
       margin-bottom: 1rem;
-      transition: all .5s;
-      bottom: -80px;
+      transition: all 0.5s;
+      bottom: -88px;
       position: relative;
+      @media screen and (max-width: 992px) {
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        position: absolute;
+        margin: auto;
+      }
     }
-    .header-welcome-container-btn{
+    .header-welcome-container-btn {
       opacity: 0;
       height: 0;
       width: 0;
       user-select: none;
-      transition: all .5s;
+      transition: all 0.5s;
     }
   }
   &::after {
@@ -97,7 +121,7 @@ ul {
   &-menu {
     height: 150px;
     position: relative;
-    z-index: 10;
+    // z-index: 10; muteo
     @media screen and (max-width: 991px) {
       height: 80px;
     }
@@ -107,6 +131,8 @@ ul {
       margin: 0 auto;
       transition: all 0.5s;
       padding-left: 0;
+      z-index: 99999999;
+      position: relative;
       li {
         padding-top: 1.5rem;
         font-size: 1.25rem;
@@ -132,27 +158,34 @@ ul {
         border-radius: 50%;
         transition: all 0.5s;
         z-index: 9999;
-
+        @media screen and (max-width: 992px) {
+          align-items: center !important;
+        }
         img {
           max-width: 150px;
           width: 90%;
           margin-bottom: 1rem;
+          @media screen and (max-width: 992px) {
+            margin-bottom: 0;
+          }
         }
       }
-      @media screen and (max-width: 991px) {
-        width: 100%;
+      @media screen and (max-width: 992px) {
+        width: 60px;
         display: flex;
         justify-content: center;
-        transform: translateX(-45%) translateY(10px);
+        transform: translate(0);
+        position: fixed;
+        left: 0.8rem;
+        top: 1rem;
+        z-index: 999999999;
         &-container {
-          left: 0;
           width: 60px;
           height: 60px;
           transform: rotateZ(360deg);
+          margin-left: 0;
         }
       }
-    }
-    &-img.active {
     }
     &-movil {
       display: none;
@@ -171,7 +204,7 @@ ul {
     height: 100vh;
     background-color: $red1;
     transform: translateX(-100%);
-    transition: transform .3s ease-in;
+    transition: transform 0.3s ease-in;
     @media screen and (max-width: 600px) {
       width: 70%;
     }
@@ -180,12 +213,12 @@ ul {
     }
     .header-menu-img-container {
       transform: translateX(100%);
-    transition: transform .3s ease-out;
+      transition: transform 0.3s ease-out;
     }
     .header-menu-movil {
       display: flex;
       flex-direction: column;
-      z-index: 90001;
+      z-index: 99999999999;
       position: relative;
 
       .logo {
@@ -232,6 +265,9 @@ ul {
       font-weight: bold;
       position: relative;
       top: 4rem;
+      max-width: 110px;
+      width: 100%;
+      margin: auto;
       img {
         width: 12px;
         transform: translateX(-50px);
@@ -263,7 +299,7 @@ ul {
     }
     .header-global {
       transform: translateX(0%);
-      z-index: 90001;
+      z-index: 9999999999;
     }
   }
 }

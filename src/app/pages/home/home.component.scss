@@ -1,8 +1,5 @@
 @import "../../../styles.scss";
 
-* {
-  font-family: "Josefin Sans";
-}
 
 p {
   font-size: 1.15rem;
@@ -61,15 +58,24 @@ h3 {
         height: 455px;
         width: 700px;
         margin-top: -20%;
-        padding-left: 6rem;
         position: relative;
         z-index: 10;
+        div {
+          max-width: 405px;
+          margin: 0 auto;
+          @media screen and (max-width: 992px) {
+            max-width: 350px;
+            width: 90%;
+            text-align: center;
+            @media screen and (max-width: 570px) {
+              max-width: 250px;
+            }
+          }
+        }
         h2 {
           margin: 1.35rem 0 1.75rem;
         }
         p {
-          max-width: 430px;
-          width: 80%;
           font-weight: 500;
           font-size: 1.7rem;
           line-height: 2.4rem;
@@ -114,7 +120,7 @@ h3 {
             margin: 1.2rem 0 2rem;
           }
         }
-        @media screen and (max-width: 520px) {
+        @media screen and (max-width: 570px) {
           background-image: url(../../../assets/img/etc/contenedor3.png);
           height: 500px;
           max-width: 320px;
@@ -169,6 +175,15 @@ h3 {
     display: flex;
     align-items: center;
     position: relative;
+    min-height: 1000px;
+    @media screen and (max-width: 1131px) {
+      height: 85vh;
+      min-height: 740px;
+    }
+     @media screen and (max-width: 767px) {
+      min-height: 900px;
+    }
+
     &::after {
       content: "";
       width: 100%;
@@ -179,9 +194,6 @@ h3 {
       height: 225px;
       background-image: url(../../../assets/img/backgrounds/bg2-bottom.png);
     }
-    @media screen and (max-width: 1131px) {
-      height: 85vh;
-    }
     &-container {
       background-image: url(../../../assets/img/etc/heizzel-news.png);
       background-size: contain;
@@ -189,6 +201,7 @@ h3 {
       height: 750px;
       width: 1190px;
       margin: 0 auto;
+      z-index: 9;
       div {
         max-width: 300px;
         margin-left: 58%;
@@ -221,30 +234,44 @@ h3 {
           }
         }
         @media screen and (max-width: 767px) {
-          background-image: url(../../../assets/img/etc/heizzel-news2.png);
+          background-image: url(../../../assets/img/etc/heizzel-news3.png);
           background-position-x: center;
+          width: 1000px;
+          height: 700px;
           div {
-            max-width: 275px;
+            max-width: 255px;
             margin: 0 auto;
-            transform: translate(3rem, 6rem);
+            transform: translate(0.5rem, 7rem);
+            h3 {
+              max-width: 250px;
+            }
             p {
-              font-size: 0.85rem;
+              margin-top: 1rem;
+              font-size: 0.8rem;
             }
           }
           @media screen and (max-width: 500px) {
             div {
-              max-width: 190px;
-              transform: translate(3rem, 3rem);
+              max-width: 250px;
+              width: 90%;
               h3 {
                 font-size: 2rem;
-                line-height: 2rem;
-                max-width: 150px;
-                margin-bottom: 0;
               }
               p {
                 margin-top: 0.5rem;
                 font-size: 0.75rem;
               }
+            }
+          }
+          @media screen and (max-width: 470px) {
+            div {
+              transform: translate(0.5rem, 5rem);
+              max-width: 200px;
+            }
+          }
+          @media screen and (max-width: 360px) {
+            div {
+              transform: translate(0.5rem, 4.5rem);
             }
           }
         }
@@ -263,20 +290,6 @@ h3 {
     z-index: 5;
     position: relative;
   }
-
-  // .buen-paper3 {
-  //   margin-top: -17%;
-  //   z-index: 5;
-  //   position: relative;
-  //   @media screen and (max-width: 767px) {
-  //     height: 300px;
-  //     object-fit: cover;
-  //     object-position: top;
-  //     @media screen and (max-width: 450px) {
-  //       margin-top: -40%;
-  //     }
-  //   }
-  // }
   .section4 {
     background-image: url(../../../assets/img/backgrounds/bg4.png);
     background-size: cover;
@@ -285,20 +298,32 @@ h3 {
     margin-top: -11%;
     z-index: 100;
     position: relative;
-    height: 950px;
+    height: 1085px;
+    padding-top: 8rem;
+    @media screen and (max-width: 1550px) {
+      margin-top: -14%;
+    }
+    @media screen and (max-width: 1200px) {
+      margin-top: -16%;
+    }
     @media screen and (max-width: 992px) {
       height: 100%;
-      padding: 20rem 0 4rem;
+      padding: 20rem 0 10rem;
+      margin-top: -33%;
     }
-    @media screen and (max-width: 767px) {
-      margin-top: -15%;
+    @media screen and (max-width: 815px) {
+      margin-top: -37%;
     }
-    @media screen and (max-width: 540px) {
-      margin-top: -21%;
+    @media screen and (max-width: 720px) {
+      margin-top: -46%;
     }
-    @media screen and (max-width: 395px) {
-      margin-top: -26%;
+    @media screen and (max-width: 585px) {
+      margin-top: -51%;
     }
+    @media screen and (max-width: 425px) {
+      margin-top: -58%;
+    }
+
     .row {
       @extend %width1;
     }
@@ -310,9 +335,23 @@ h3 {
         background-repeat: no-repeat;
         background-position-x: center;
         height: 680px;
-        transform: translateY(65px);
+        transform: translateY(-10px);
         @media screen and (max-width: 992px) {
           transform: translateY(0);
+        }
+        @media screen and (max-width: 500px) {
+          height: 520px;
+        }
+        @media screen and (max-width: 420px) {
+          height: 500px;
+          padding: 0 1.5rem;
+          width: 350px;
+          margin: 0 auto;
+        }
+        @media screen and (max-width: 368px) {
+          height: 421px;
+          padding: 0 0.8rem;
+          width: 300px;
         }
       }
     }
@@ -325,7 +364,7 @@ h3 {
         background-size: contain;
         background-repeat: no-repeat;
         background-position-x: center;
-        width: 610px;
+        width: 575px;
         height: 555px;
         margin: 0 auto;
         @media screen and (max-width: 1225px) {
@@ -338,7 +377,7 @@ h3 {
         }
         @media screen and (max-width: 520px) {
           width: 290px;
-          height: 310px;
+          height: 288px;
         }
 
         .swiper-slide {
@@ -347,6 +386,7 @@ h3 {
           justify-content: center;
           img {
             max-width: 380px;
+            border-radius: 1.2rem;
             @media screen and (max-width: 1225px) {
               max-width: 345px;
             }
@@ -361,40 +401,16 @@ h3 {
           }
         }
       }
-    }
-  }
-  .buen-paper4 {
-    margin-top: -9%;
-    position: relative;
-    z-index: 101;
-    object-fit: cover;
-    object-position: top;
-    width: 100%;
-  }
-  .section5 {
-    background-image: url(../../../assets/img/backgrounds/bg5.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-x: center;
-    padding-top: 6rem;
-    margin-top: -10.5%;
-    position: relative;
-    z-index: 102;
-
-    .row {
-      @extend %width1;
-      margin: 0 auto 3rem;
-      width: 100%;
-    }
-    &-box1 {
-      margin-bottom: 4rem;
       .carrusel {
         max-width: 500px;
         width: 100%;
-        padding: 1rem 0;
+        @media screen and (max-width: 520px) {
+          max-width: 320px;
+          margin-top: -1.75rem;
+        }
         .swiper-button-prev,
         .swiper-button-next {
-          background-color: $red1;
+          background-color: $white;
           width: 50px;
           height: 50px;
           border-radius: 50%;
@@ -437,17 +453,57 @@ h3 {
         h3 {
           text-align: center;
           text-transform: capitalize;
-          @media screen and (max-width: 1100px) {
-            font-size: 4rem;
-          }
-          @media screen and (max-width: 767px) {
-            font-size: 3rem;
+          font-size: 4rem;
+          padding: 1rem 0;
+          color: $white;
+          @media screen and (max-width: 992px) {
+            padding: 2rem 0;
           }
           @media screen and (max-width: 520px) {
-            font-size: 2rem;
+            font-size: 2.5rem;
           }
         }
       }
+    }
+  }
+  .buen-paper4 {
+    margin-top: -9%;
+    position: relative;
+    z-index: 101;
+    object-fit: cover;
+    object-position: top;
+    width: 100%;
+    @media screen and (max-width: 992px) {
+      margin-top: -26%;
+      height: 260px;
+      object-position: 54%;
+      @media screen and (max-width: 520px) {
+        margin-top: -44%;
+      }
+    }
+  }
+  .section5 {
+    background-image: url(../../../assets/img/backgrounds/bg5.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    padding-top: 6rem;
+    margin-top: -10.5%;
+    position: relative;
+    z-index: 102;
+    @media screen and (max-width: 992px) {
+      margin-top: -18.5%;
+      @media screen and (max-width: 767px) {
+        margin-top: -10rem;
+      }
+    }
+    .row {
+      @extend %width1;
+      margin: 0 auto 3rem;
+      width: 100%;
+    }
+    &-box1 {
+      margin-bottom: 4rem;
     }
     &-box2 {
       &-container {
@@ -474,10 +530,12 @@ h3 {
         }
         @media screen and (max-width: 400px) {
           background-image: url(../../../assets/img/etc/marcomovil1-a2.svg);
-          padding: 0 4.5rem;
+          padding: 0 3rem;
+          height: 1130px;
         }
-        @media screen and (max-width: 380px) {
+        @media screen and (max-width: 368px) {
           padding: 0 4rem;
+          height: 1000px;
         }
         @media screen and (max-width: 360px) {
           padding: 0 3rem;
@@ -504,6 +562,7 @@ h3 {
             margin: 1rem auto 0;
             max-width: 630px;
             color: $cake;
+            font-size: 1rem;
           }
           @media screen and (max-width: 1300px) {
             .parrafo1 {
@@ -565,6 +624,7 @@ h3 {
             height: 450px;
             padding: 0 3rem;
             background-image: url(../../../assets/img/etc/contenedor3.png);
+            margin-top: 2rem;
             ul {
               padding: 0;
               li {
@@ -580,11 +640,21 @@ h3 {
           }
           @media screen and (max-width: 400px) {
             //CARD
+            height: 405px;
+            padding: 0 1.5rem 0 2.5rem;
+            ul {
+              li {
+                margin-top: 0.3rem;
+              }
+            }
+          }
+          @media screen and (max-width: 368px) {
+            //CARD
             height: 365px;
             padding: 0 1rem 0 1.5rem;
             ul {
               li {
-                margin-top: 0.3rem;
+                font-size: 0.75rem;
               }
             }
           }
@@ -598,6 +668,11 @@ h3 {
       }
     }
     &-box4 {
+      @media screen and (max-width: 700px) {
+        max-width: 570px;
+        width: 88%;
+        margin: 0 auto;
+      }
       h3 {
         color: $cake;
         margin-top: 5.5rem;
@@ -617,7 +692,10 @@ h3 {
     height: 1000px;
     position: relative;
     @media screen and (max-width: 992px) {
-      height: 1465px;
+      height: 1320px;
+    }
+    @media screen and (max-width: 500px) {
+      height: 1000px;
     }
     &::before,
     &::after {
@@ -649,8 +727,15 @@ h3 {
         width: 400px;
         padding-left: 2rem;
         transform: translateY(50px);
-        @media screen and (max-width: 767px) {
-          height: 450px;
+        @media screen and (max-width: 992px) {
+          height: 675px;
+          width: 445px;
+          transform: translateY(-110px);
+        }
+        @media screen and (max-width: 500px) {
+          height: 430px;
+          width: 320px;
+          transform: translateY(-110px);
         }
         ul {
           @media screen and (max-width: 350px) {
@@ -662,6 +747,9 @@ h3 {
             font-size: 1.2rem;
             margin-top: 0.6rem;
             text-shadow: 0.2px 0.2px;
+            @media screen and (max-width: 650px) {
+              font-size: 1rem;
+            }
             div {
               width: 30px;
               height: 20px;
@@ -749,7 +837,7 @@ h3 {
           width: 615px;
         }
         @media screen and (max-width: 992px) {
-          margin-top: 8rem;
+          margin-top: -2rem;
           width: 520px;
         }
         @media screen and (max-width: 520px) {
@@ -764,6 +852,9 @@ h3 {
   .section7 {
     background-color: #000000;
     padding: 6rem 0;
+    @media screen and (max-width: 405px) {
+      padding: 0;
+    }
     &-container {
       background-color: transparent;
       background-image: url(../../../assets/img/etc/card.png);
@@ -859,7 +950,7 @@ h3 {
       }
       @media screen and (max-width: 405px) {
         width: 330px;
-        bottom: 160px;
+        bottom: 58px;
       }
     }
     .roap {
@@ -899,6 +990,8 @@ h3 {
       .active {
         color: #ffffff;
         background-color: $red1;
+        border: none;
+
         &::after {
           background-color: $red1;
         }
@@ -924,8 +1017,15 @@ h3 {
     position: relative;
     z-index: 99;
     margin-top: -11.2%;
+    @media screen and (max-width: 767px) {
+      height: 160px;
+      margin-top: -16.2%;
+      @media screen and (max-width: 500px) {
+        height: 160px;
+        margin-top: -25%;
+      }
+    }
   }
-
 }
 
 // FIRE ANIMATION

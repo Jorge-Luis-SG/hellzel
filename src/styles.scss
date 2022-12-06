@@ -1,36 +1,38 @@
-@import './assets/fonts/fonts.scss';
+@import "./assets/fonts/fonts.scss";
 
-*{
+* {
   color: #000000;
+  font-family: "Josefin Sans";
 }
 
-
 // COLORS GLOBALS
-$black1:#171717;
-$red1: #CD3049;
-$red2: #D93C55;
-$red3: #D53851;
-$cake: #FDEBB3;
-$cake2: #F4E8D2;
-$yellow: #FFEBB3;
-$orange: #FF660E;
-$gray: #5B5A5F;
-
-
+$black1: #171717;
+$red1: #cd3049;
+$red2: #d93c55;
+$red3: #d53851;
+$red4: #CE3945;
+$white: #f2e6cb;
+$white2: #EDE6CE;
+$cake: #fdebb3;
+$cake2: #f4e8d2;
+$yellow: #ffebb3;
+$orange: #ff660e;
+$gray: #5b5a5f;
 
 // maximo ancho
-%width1{
+%width1 {
   max-width: 1150px;
   margin: 0 auto;
   width: 90%;
-
 }
-.row,.col-12, .col-lg-6{
+.row,
+.col-12,
+.col-lg-6 {
   //ESTOY AGREGANDO ESTOS VALORES POR DEFECTO YA QUE AL NO COLOCARLOS ME ROMPE EL WEB DESIGN
   margin: 0;
   padding: 0;
 }
 
-body{
+body {
   background-color: #000000;
 }

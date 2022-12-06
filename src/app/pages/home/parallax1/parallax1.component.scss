@@ -21,24 +21,36 @@ h3 {
   }
 }
 
+.fixed1-active {
+  overflow: auto;
+  &::-webkit-scrollbar {
+    width: 8px; /* Tamaño del scroll en vertical */
+    height: 8px; /* Tamaño del scroll en horizontal */
+    // display: none;  /* Ocultar scroll */
+  }
+}
 .parallax {
+  margin-top: -15%;
+  padding-top: 25%;
   background-image: url(../../../../assets/img/backgrounds/bg3.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
   background-attachment: fixed;
-  margin-top: -15%;
-  padding-top: 25%;
-  min-height: 720px;
-  display: flex;
-  align-items: center;
-  position: relative;
-  &::-webkit-scrollbar {
-    display: none;
+  & > div {
+    min-height: 720px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    scroll-snap-type: y mandatory;
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
   @media screen and (max-width: 992px) {
     margin-top: -2%;
     min-height: 720px;
+    padding-bottom: 10rem;
   }
   .face-container {
     z-index: 100;
@@ -48,71 +60,123 @@ h3 {
     opacity: 1;
   }
 
-  .brain-container {
-    width: 100%;
-    margin: 0 auto;
-    height: calc(100% - 1380px);
+  .forehead {
+    width: 460px;
+    transform: translate(55px, 95px);
+    position: relative;
+    top: 0;
+    transition: top 1s;
+    &-active {
+      top: -6rem;
+      transition: top 1s;
+    }
+    @media screen and (max-width: 1175px) {
+      transform: translate(48px, 91px);
+      width: 396px;
+      &-active {
+        top: -4rem;
+      }
+      @media screen and (max-width: 520px) {
+        transform: translate(32px, 110px);
+        width: 269px;
+        &-active {
+          top: -4rem;
+        }
+      }
+    }
+  }
+  .brain-one {
     position: absolute;
-    top: 640px;
-    right: 0;
-    left: 0;
-    transition: width 1s;
-    &-item {
-      width: 260px;
-      transform: translate(20px, 196px);
-      position: sticky;
-      top: 0;
-      left: calc(50% - 130px);
-      z-index: 5;
-      transition: width 1s;
-      max-width: 700px;
-      display: flex;
+    width: 280px;
+    top: 33.5%;
+    transform: translateX(45px);
+    @media screen and (max-width: 1175px) {
+      top: 39.5%;
+      width: 237px;
+      transform: translateX(39px);
+      @media screen and (max-width: 520px) {
+        top: 48.5%;
+        width: 150px;
+        transform: translateX(23px);
+      }
+    }
+  }
+  .hellzel {
+    width: 540px;
+    transform: translateY(-141px);
+    transition: top 1s;
+    position: relative;
+    top: 0;
+    z-index: 5;
+    &-active {
+      top: 14rem;
+      transition: top 1s;
+    }
+    @media screen and (max-width: 1175px) {
+      width: 470px;
+      transform: translateY(-111px);
+      &-active {
+        top: 11rem;
+      }
+      @media screen and (max-width: 520px) {
+        width: 320px;
+        transform: translateY(-27px);
+        &-active {
+          top: 8rem;
+        }
+      }
     }
   }
 
   &-box1 {
     max-width: 600px;
     margin-left: auto;
-
+    scroll-snap-align: center;
+    position: relative;
     @media screen and (max-width: 992px) {
       margin-left: 0;
       margin: 0 auto;
       height: 470px;
     }
     &-nft {
-      margin-bottom: 13rem;
-      // transform: translateY(-130px);
-      .forehead {
-        width: 460px;
-        transform: translate(55px, 450px);
-      }
-      .face {
-        width: 540px;
-        transform: translateY(-453px);
+      margin-bottom: 7rem;
+      &-movil {
+        transform: translateY(-80px);
+        @media screen and (max-width: 355px) {
+          left: -0.5rem;
+          position: relative;
+        }
       }
     }
   }
   &-box2 {
-    &-container {
-      max-width: 800px;
-      height: 900px;
+    &-container,
+    &-container-movil {
+      max-width: 640px;
+      height: 760px;
       background-image: url(../../../../assets/img/etc/paper.png);
       background-size: contain;
       background-repeat: no-repeat;
       background-position-x: center;
+      position: relative;
+      z-index: 10;
       @media screen and (max-width: 1600px) {
         width: 585px;
-        height: 810px;
+        height: 700px;
       }
       @media screen and (max-width: 1175px) {
         width: 475px;
         height: 670px;
       }
       @media screen and (max-width: 992px) {
-        margin-right: 0;
         margin: 0 auto;
       }
       @media screen and (max-width: 520px) {
+        height: 582px;
+        width: 400px;
+        padding: 1rem;
+      }
+      @media screen and (max-width: 400px) {
         height: 460px;
         width: 320px;
         padding: 1rem;
@@ -121,6 +185,7 @@ h3 {
   }
   &-box3 {
     margin-bottom: 8rem;
+    scroll-snap-align: center;
     @media screen and (max-width: 992px) {
       margin: 6rem 0;
     }
@@ -133,48 +198,119 @@ h3 {
         position: absolute;
         background-image: url(../../../../assets/img/picture/nft-parts/tray.png);
         background-position: center;
-        background-size: cover;
+        background-size: contain;
         background-repeat: no-repeat;
-        height: 520px;
+        height: 440px;
         width: 100%;
         bottom: -9%;
+        left: 100%;
         z-index: 1;
+        transition: left 0.8s;
+        @media screen and (max-width: 992px) {
+          bottom: -17%;
+        }
+      }
+      &-active {
+        &::after {
+          left: 0;
+          transition: left 0.8s;
+        }
       }
       &-one {
         background-image: url(../../../../assets/img/etc/contenedor2.png);
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
-        height: 500px;
-        @media screen and (max-width: 767px) {
-          background-image: url(../../../../assets/img/etc/paper.png);
-          transform: translateY(-50px);
+        height: 450px;
+        position: relative;
+        z-index: 10;
+        @media screen and (max-width: 992px) {
+          margin-top: 4rem;
+          @media screen and (max-width: 767px) {
+            height: 335px;
+            @media screen and (max-width: 620px) {
+              height: 281px;
+              @media screen and (max-width: 520px) {
+                margin-top: -3rem;
+              }
+            }
+          }
         }
+
         div {
           max-width: 655px;
-          @media screen and (max-width: 767px) {
-            max-width: 280px;
-          }
+          width: 80%;
           p {
             margin-top: 1rem;
+          }
+          @media screen and (max-width: 620px) {
+            h3 {
+              font-size: 3rem;
+            }
+            p {
+              font-size: 0.8rem;
+            }
+            @media screen and (max-width: 520px) {
+              transform: translateY(20px);
+              // aqui
+              @media screen and (max-width: 450px) {
+                width: 90%;
+                transform: translateY(13px);
+                h3 {
+                  font-size: 2.2rem;
+                  line-height: 2rem;
+                }
+                p {
+                  font-size: 0.7rem;
+                  line-height: 0.9rem;
+                }
+              }
+            }
           }
         }
       }
       &-two {
         margin-top: -4rem;
+        height: 500px;
+
         .brain {
           position: relative;
-          z-index: 10;
+          z-index: 9;
+          transition: z-index 1.15s;
+          @media screen and (max-width: 992px) {
+            z-index: 1;
+          }
           img {
             max-width: 700px;
-            width: 100%;
+            width: 0%;
+            margin: 0 auto;
             opacity: 0;
+            transition: all 0.8s;
+            top: -13rem;
+            position: relative;
+            @media screen and (max-width: 992px) {
+              max-width: 550px;
+            }
+          }
+        }
+        .brain.active {
+          z-index: 10;
+          transition: z-index 1.15s;
+          img {
+            opacity: 1;
+            width: 100%;
+            transition: all 0.8s;
+            top: -2rem;
+            @media screen and (max-width: 992px) {
+              top: 0;
+              width: 70%;
+            }
           }
         }
         .diagnosis {
           position: relative;
           z-index: 10;
-          transition: transform 0.65s;
+          transition: transform 0.8s;
           @media screen and (max-width: 992px) {
             position: absolute;
             z-index: 100;
@@ -223,6 +359,10 @@ h3 {
             }
             ul {
               li {
+                &:hover {
+                  filter: opacity(0.8);
+                  cursor: pointer;
+                }
                 &:first-child {
                   background-image: url(../../../../assets/img/picture/nft-parts/diagnosis/1.png);
                   height: 73px;
@@ -267,6 +407,10 @@ h3 {
             }
             ul {
               li {
+                &:hover {
+                  filter: opacity(0.8);
+                  cursor: pointer;
+                }
                 &:first-child {
                   background-image: url(../../../../assets/img/picture/nft-parts/diagnosis/6.png);
                   height: 79px;
@@ -309,48 +453,117 @@ h3 {
       }
     }
   }
-  &-box4 {
-    @media screen and (max-width: 992px) {
-      margin: 11rem auto -2rem;
-    }
-  }
+
   &-box4 {
     max-width: 600px;
     margin-left: auto;
     position: relative;
+    scroll-snap-align: center;
     @media screen and (max-width: 992px) {
       margin-left: 0;
       margin: 0 auto;
       height: 470px;
     }
 
-    &-nft {
+    &-nft,
+    &-nft-movil {
       position: relative;
       margin-bottom: 13rem;
       .forehead {
-        width: 460px;
-        transform: translate(66px, -206px);
+        width: 447px;
+        transform: translate(64px, 0);
+        transition: transform 1s;
       }
-      .face {
-        width: 540px;
-        z-index: 6;
-        transform: translateY(1505px);
+      .brain-two {
+        position: absolute;
+        width: 280px;
+        transform: translate(39px, 322px);
       }
-      @media screen and (max-width: 992px) {
+      .penny {
+        width: 522px;
+        transform: translateY(-123px);
+        transition: top 1s;
+        position: relative;
+        z-index: 5;
+        top: 14rem;
+        transition: top 1s;
+      }
+      @media screen and (max-width: 1175px) {
         .forehead {
-          width: 264px;
-          transform: translate(35px, 0);
-          margin-bottom: -11rem;
-          z-index: 3;
+          width: 396px;
+          transform: translate(58px, 60px);
         }
-        .brain {
-          width: 200px;
-          transform: translateX(25px);
+        .brain-two {
+          width: 237px;
+          transform: translate(39px, 330px);
         }
-        .face {
-          width: 340px;
-          transform: translate(0, 0);
-          margin-top: -7rem;
+        .penny {
+          width: 470px;
+          transform: translateY(-70px);
+          top: 11rem;
+        }
+        @media screen and (max-width: 992px) {
+          z-index: 11;
+          top: -17rem;
+          @media screen and (max-width: 355px) {
+            left: -1rem;
+          }
+          .forehead {
+            width: 396px;
+            transform: translate(58px, 60px);
+          }
+          .brain-two {
+            width: 237px;
+            transform: translate(39px, 325px);
+          }
+          .penny {
+            width: 470px;
+            transform: translateY(-70px);
+            top: 11rem;
+          }
+        }
+        @media screen and (max-width: 520px) {
+          .forehead {
+            transform: translate(39px, 145px);
+            width: 269px;
+          }
+          .brain-two {
+            width: 150px;
+            transform: translate(18px, 343px);
+          }
+          .penny {
+            width: 320px;
+            top: 18rem;
+          }
+        }
+      }
+    }
+    &-nft.active,
+    &-nft-movil.active {
+      .forehead {
+        transition: transform 1s;
+        transform: translate(64px, 127px);
+      }
+      .brain-two {
+        transform: translate(39px, 325px);
+      }
+      .penny {
+        top: 0;
+      }
+      @media screen and (max-width: 1175px) {
+        .forehead {
+          transform: translate(58px, 152px);
+        }
+      }
+      @media screen and (max-width: 520px) {
+        .forehead {
+          transform: translate(39px, 225px);
+        }
+        .brain-two {
+          transform: translate(18px, 350px);
+        }
+        .penny {
+          top: 9rem;
         }
       }
     }

@@ -20,7 +20,6 @@ export class FaqComponent implements OnInit {
         if (!$(index).closest(container).length) {
           container.hide();
         }
-
         $(elemento).click(function () {
           $('.faq-screen').click(function () {
             $('#faq' + index).removeClass('active');
@@ -37,7 +36,6 @@ export class FaqComponent implements OnInit {
             $('#faq' + index).css({
               display: 'block',
             });
-          } else {
           }
         });
       });
