@@ -1,0 +1,106 @@
+{
+  "lang":"es",
+  "home":{
+    "section1":{
+      "title1":"¿Realmente entendemos lo que hay dentro de la cabeza de una persona que sufre una",
+      "title2":"Enfermedad mental?",
+      "title3":"Start Mint"
+    },
+    "section2":{
+      "title1":"Historia Clínica",
+      "title2":"Adéntrate en el subconsciente de una de las mentes más retorcidas que ha pisado el mundo de los NFT. Miles de piezas que te mostrarán el sufrimiento, dolor y tragedia de un personaje oscuro y tenebroso. Accede a su mundo y sé parte de la selecta comunidad que tendrá acceso exclusivo a MISTERY BOX, una experiencia de inmersión en VIDEO JUEGO y una SERIE ANIMADA."
+    },
+    "section3":{
+      "title1":"Super Yo",
+        "p1":"Hellzel’s Mind es una colección de 6.666 piezas ilustradas de la serie animada con exclusividad para 300 NFT que vendrán en formato de animación en GIF y acceso al MISTERY BOX. Una propuesta gráfica inspirada en los años 30 entregada en piezas representativas de las diferentes enfermedades mentales.",
+        "p2":"Los fondos recaudados con el MINT serán destinados al desarrollo de la serie y el ecosistema en general."
+    },
+    "carrusel":{
+      "1":"ansiedad",
+      "2":"autismo",
+      "3":"bipolar",
+      "4":"Depresión",
+      "6":"esquizofrenia",
+      "7":"hellzel",
+      "8":"panico",
+      "9":"ptsd",
+      "10":"tda",
+      "11":"tdi",
+      "12":"trastorno alimenticio"
+    },
+    "section4":{
+      "title1":"Utilities",
+      "title2":"ARTISTA",
+      "p":"Hellzel’s Mind otorgara el 50% de las ganancias de la serie y el ecosistema serán repartidas entre todos los holders, quienes también tendrán estos beneficios:",
+      "1":"Ser productores ejecutivos de la serie",
+      "2":"Marketplace con merch exclusiva",
+      "3":"Giveaways exclusivos",
+      "4":"Ser parte del desarrollo del video juego",
+      "5":"Accesos exclusivos como primicias del ecosistema (NFTs canjeables por artículos de la serie, airdrops de nuestros socios aliados, entre otros)",
+      "6":"Posibilidad de asistir a la premiere de la serie.",
+      "p2":"El 50% de los royalties serán enviados a instituciones que promueven la salud mental. Hellzel ofrece pool de liquidez por 36 meses con rendimiento del 0,5%.",
+      "p3":"Se creará una galería de experiencia inmersiva dentro del metaverso que permitirá a la comunidad obtener contenido exclusivo, personalizado y único dentro de Hellzel’s Land."
+
+    },
+    "section5":{
+      "title1":"Mystery Box",
+      "p1":"Hacer parte de este ecosistema tendrá múltiples beneficios para la comunidad, como la Mystery Box, sólo habrá 300 mystery box que las podrán obtener a través de los NFTs."
+    },
+     "section6":{
+      "1":"Escultura 3d (22cm)",
+      "2":"NFT en versión Lenticular",
+      "3":"Stickers",
+      "4":"Hoodie",
+      "5":"Libro Especial de Hellzel",
+      "6":"QR Privado del trailer",
+      "7":"Test de personalidad"
+    },
+    "section7":{
+      "title1":"Roadmap",
+      "phase":"OBJETIVOS Q3 2022",
+      "1":"Creación de toda la colección de Hellzel: 6.666 piezas ilustradas",
+      "2":"Branding Hellzel.",
+      "3":"Script del primer capítulo.",
+      "4":"Guión promo Hellzel.",
+      "5":"Estructura de Web.",
+      "6":"Diseño de Web.",
+      "7":"Creación de rigg de personajes para animación, expresión sheet y turn around.",
+
+      "b1":"Diseño y desarrollo de experiencia VR.",
+      "b2":"Lanzamiento promo.",
+      "b3":"Lanzamiento Web."
+    },
+    "parallax":{
+      "title1":"Yo",
+      "p1":"Una mente infantil y retrasada para su edad, que ha comenzado a conocer el lado más oscuro de su interior, sin entender que es una incubadora de incontables enfermedades con las que deberá sobrellevar una vida llena de desconocimiento, poca empatía, bullying y desamor. Un ser introvertido, tímido, sensible y miedoso que poco a poco irá creando dentro de sí su mundo ideal de fantasía.",
+      "title2":"Diagnóstico",
+      "p2":"Exploramos de forma inmersiva las enfermedades mentales a través de la vida de un joven que deberá enfrentarse a su lado más oscuro, en una sociedad que aún no comprende cómo es vivir preso de sus pensamientos más perversos. Educación mental a través de humor sarcástico,<br> crudo y visceral.",
+      "enfermedad1":"Ansiedad",
+      "enfermedad2":"Depresión",
+      "enfermedad3":"Desorden",
+      "enfermedad3-b":"Alimenticio",
+      "enfermedad4":"TEPT",
+      "enfermedad5":"Déficit de",
+      "enfermedad5-b":"Atención",
+
+      "enfermedad6":"Bipolaridad",
+      "enfermedad7":"Esquizofrenia",
+      "enfermedad8":"DiD",
+      "enfermedad9":"Autismo",
+      "enfermedad10":"Desorden de",
+      "enfermedad10-b":"Pánico",
+
+      "title3":"El polo opuesto de Hellzel, su lado oscuro, sus pensamientos más escondidos, sus ganas de devorarse, de una manera literal, al mundo y a quien en su camino se cruce. Altivo, iracundo, descontrolado y desalmado. No le teme a las consecuencias porque para él son inexistentes, no cuenta con un gramo de empatía o amor, ya que no lo conoce."
+
+    },
+    "trivia":{
+
+    }
+
+
+  },
+
+  "mint":{
+   
+  }
+}

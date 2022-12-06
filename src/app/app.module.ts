@@ -22,8 +22,11 @@ import { FaqComponent } from './pages/home/faq/faq.component';
 import { FinalComponent } from './pages/home/final/final.component';
 import { PaisesSelectComponent } from './components/paises-select/paises-select.component';
 import { SpinnerComponent } from './components/spinner/spinner.component';
-import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { HttpClient, HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { MintComponent } from './pages/mint/mint.component';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { LangComponent } from './lang/lang.component';
 // import { SpinnerInterceptor } from './components/spinner/spinner.interceptor';
 
 
@@ -50,7 +53,8 @@ export function playerFactory() {
     FinalComponent,
     PaisesSelectComponent,
     SpinnerComponent,
-    MintComponent
+    MintComponent,
+    LangComponent
   ],
   imports: [
     BrowserModule,
@@ -60,6 +64,13 @@ export function playerFactory() {
     NgxParallaxScrollModule,
     HttpClientModule,
     LottieModule.forRoot({ player: playerFactory }),
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: httpTranslateLoader,
+        deps: [HttpClient]
+      }
+    })
   ],
   providers: [
     // {provide: HTTP_INTERCEPTORS, useClass: SpinnerInterceptor, multi: true }
@@ -67,3 +78,6 @@ export function playerFactory() {
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+export function httpTranslateLoader(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}
