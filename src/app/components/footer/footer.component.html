@@ -1,24 +1,28 @@
 <footer class="d-flex flex-column align-items-center justify-content-center" id="help">
-  <h3 class="text-center">¿Necesitas ayuda?</h3>
-  <p class="text-center">Nos preocupamos por tu salud mental, así que si sientes que necesitas ayuda no dudes en pedirla
-    lo antes posible. Te dejamos líneas de atención en el mundo para contacto: </p>
+  <h3 class="text-center">{{'footer.1' | translate}}</h3>
+  <p class="text-center">{{'footer.2' | translate}}</p>
   <app-btn2 text="{{pais}}" id="pais"></app-btn2>
   <div>
-    <a href="#" target="_blank" rel="noopener noreferrer">
+    <a href="https://discord.com/invite/a5dqwnDq7j" target="_blank" rel="noopener noreferrer">
       <img src="../../../assets/img/logo-icons/discord.png" alt="">
     </a>
-    <a href="#" target="_blank" rel="noopener noreferrer">
+    <a href="https://www.facebook.com/HellzelsMind?mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer">
       <img src="../../../assets/img/logo-icons/facebook.png" alt="">
     </a>
-    <a href="#" target="_blank" rel="noopener noreferrer">
+    <a href="https://instagram.com/hellzelsmind?igshid=MWI4MTIyMDE=" target="_blank" rel="noopener noreferrer">
       <img src="../../../assets/img/logo-icons/instagram.png" alt="">
     </a>
-    <a href="#" target="_blank" rel="noopener noreferrer">
+    <a href="https://twitter.com/hellzelsmind" target="_blank" rel="noopener noreferrer">
       <img src="../../../assets/img/logo-icons/twitter.png" alt="">
     </a>
   </div>
-  <span>Línea Amiga</span>
-  <a id="url" href="{{url}}" target="_blank" class="helpline">{{url}}</a>
+ <div class="helpline-div d-flex flex-column align-items-center justify-content-center">
+  <span>{{'footer.3' | translate}}</span>
+  <a id="url" href="{{url}}" target="_blank" class="helpline">Hellzel.com/help</a>
+ </div>
+  <div class="lang position-relative ">
+    <app-lang class="lang-component"></app-lang>
+  </div>
 </footer>
 
 <div class="screen-paises">
@@ -91,8 +95,7 @@
 
       <a (click)="data('https://blog.opencounseling.com/hotlines-ng/','Nigeria')"
       class="paper-pais-title text-center">Nigeria</a>
-    </
-    div>
+    </div>
   </div>
 
 </div>

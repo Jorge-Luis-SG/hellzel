@@ -43,7 +43,6 @@ footer {
     margin: 2rem auto 1rem;
   }
   div {
-    margin-top: 2rem;
     img {
       width: 80px;
       @media screen and (max-width: 800px) {
@@ -59,11 +58,22 @@ footer {
     padding: 0.6rem;
     border-radius: 1rem 1rem 0 0;
     color: $red3;
-    transform: translateY(16px);
+    margin-top: 1rem;
+    &-div {
+      transform: translateY(17px);
+      @media screen and (max-width: 1390px) {
+        transform: translateY(24px);
+      }
+      @media screen and (max-width: 800px) {
+        transform: translateY(85px);
+      }
+      @media screen and (max-width: 465px) {
+        transform: translateY(42px);
+      }
+    }
+
     @media screen and (max-width: 800px) {
       font-size: 0.85rem;
-      transform: translateY(47px);
-      margin-top: -2rem;
     }
   }
 }
@@ -124,26 +134,46 @@ footer {
     }
   }
 
+  .paper-pais-a a {
+    font-family: "Quick";
+    color: $red1;
+    font-size: 2.5rem;
+    text-decoration: none;
+    line-height: 2.5rem;
+    margin: 0.5rem 0;
+    text-transform: uppercase;
+    padding: 0.9rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    cursor: pointer;
+    &:hover {
+      border: 1px solid $red1;
+    }
+    @media screen and (max-width: 540px) {
+      font-size: 1.7rem;
+      margin: 0.35rem 0;
+    }
+  }
+}
 
-    .paper-pais-a a {
-      font-family: "Quick";
-      color: $red1;
-      font-size: 2.5rem;
-      text-decoration: none;
-      line-height: 2.5rem;
-      margin: 0.5rem 0;
-      text-transform: uppercase;
-      padding: 0.9rem;
-      border-radius: 2rem;
-      border: 1px solid transparent;
-      cursor: pointer;
-      &:hover {
-        border: 1px solid $red1;
-      }
-      @media screen and (max-width: 540px) {
-        font-size: 1.7rem;
-        margin: 0.35rem 0;
+.lang {
+  max-width: 1160px;
+  width: 93%;
+  @media screen and (max-width: 800px) {
+    display: flex;
+    justify-content: center;
+  }
+
+  &-component {
+    position: absolute;
+    bottom: 0;
+    @media screen and (max-width: 465px) {
+      position: relative;
+      bottom: 4.8rem;
+      z-index: 9999999;
+      div {
+        margin: 0 auto;
       }
     }
-
+  }
 }

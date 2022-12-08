@@ -10,7 +10,7 @@ export class HeaderComponent implements OnInit {
   constructor() {
 
     let welcome = () => {
-      $('.header-welcome').remove();
+      $('.header-welcome').hide();
     };
     $(document).ready(function () {
       $('.header-menu-movil li a').click(()=>{

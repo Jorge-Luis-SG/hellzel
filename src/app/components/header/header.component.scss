@@ -103,6 +103,9 @@ a {
       transition: all 0.5s;
     }
   }
+  &-welcome.show{
+    display: none !important;
+  }
   &::after {
     content: "";
     width: 98%;

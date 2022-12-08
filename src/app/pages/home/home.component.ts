@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { AnimationItem } from 'lottie-web';
 import { AnimationOptions } from 'ngx-lottie';
+import { Title } from '@angular/platform-browser';
+
 import Swiper from 'swiper';
 import SwiperCore, {
   Keyboard,
@@ -10,8 +12,6 @@ import SwiperCore, {
   Autoplay,
 } from 'swiper';
 SwiperCore.use([Keyboard, Pagination, Navigation, Virtual, Autoplay]);
-
-
 
 SwiperCore.use([Virtual]);
 
@@ -39,22 +39,26 @@ export class HomeComponent implements OnInit {
   }
   roapActive = false;
 
-  constructor() {
+  constructor(private title: Title) {
     window.onscroll = function (e) {
       // console.log(window.scrollY); // Value of scroll Y in px
     };
+    let localstorage = localStorage.getItem('value');
 
-
-    $(document).ready(function () {
-
-    });
+    if (localstorage == 'en') {
+      title.setTitle(
+        "Hellzel's Mind | Inside the Mind of Hellzel | NFT Collection | Mental Illness"
+      );
+    } else if (localstorage == 'es') {
+      title.setTitle(
+        "Hellzel's Mind | Dentro de la Mente de Hellzel | Colección NFT | Enfermedades Mentales"
+      );
+    }
   }
   handleAnimation(anim: any) {
     this.anim = anim;
   }
-  stop() {
-
-  }
+  stop() {}
   play() {}
 
   roap1() {
@@ -63,8 +67,6 @@ export class HomeComponent implements OnInit {
     this.roapActive = false;
     this.anim.setDirection(-1);
     this.anim.play();
-
-
   }
   roap2() {
     $('#roap2').addClass('active');

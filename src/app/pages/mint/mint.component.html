@@ -8,32 +8,32 @@
     <div class="mint-main-btnHome d-flex align-items-center " routerLink="/home">
       <div class="position-absolute">
         <img src="../../../assets/img/picture/finger2.png" alt="">
-        <button>Inicio</button>
+        <button>{{'inicio' | translate}}</button>
       </div>
     </div>
     <div class="mint-main-container">
       <div class="mint-main-container-box1 d-flex justify-content-center align-items-center">
         <div>
           <div class="marco d-flex flex-column justify-content-center align-items-center">
-            <h4 class="text-center">Fecha de Mint <span>Limitada</span></h4>
+            <h4 class="text-center">{{'mint.title1-a' | translate}} <span>{{'mint.title1-b' | translate}}</span></h4>
             <div class="marco-boxs text-center d-flex align-items-center justify-content-between">
               <div class="one">
-                <h5>Suministro</h5>
+                <h5>{{'mint.1' | translate}}</h5>
                 <p>000</p>
               </div>
               <div class="two">
-                <h5>Precio</h5>
+                <h5>{{'mint.2' | translate}}</h5>
                 <p>000</p>
               </div>
               <div class="three">
-                <h5>Max</h5>
+                <h5>{{'mint.3' | translate}}</h5>
                 <p>000</p>
               </div>
             </div>
           </div>
           <div class="mint-data">
             <div class="mint-data-box1">
-              <h5 class="text-center">Precio por NFT: 200 USDT/Each</h5>
+              <h5 class="text-center">{{'mint.price-data' | translate}}: 200 USDT/Each</h5>
               <div class="mint-data-box1-btn d-flex justify-content-between align-items-center">
                 <div class="mint-data-box1-btn-one d-flex justify-content-between align-items-center">
                   <span><img src="../../../assets/img/logo-icons/minus.svg" alt=""></span>
@@ -41,7 +41,7 @@
                   <span><img src="../../../assets/img/logo-icons/plus.svg" alt=""></span>
                 </div>
                 <div class="mint-data-box1-btn-two d-flex justify-content-center align-items-center">
-                  <p class="mb-0">Set Max</p>
+                  <p class="mb-0">{{'mint.setmax' | translate}}</p>
                 </div>
               </div>
               <p class="text-center total">Total: <span>0.000 USDT</span></p>
@@ -107,10 +107,18 @@
   <div class="containt d-flex flex-column justify-content-center align-items-center">
     <h2 class="text-center">Síguenos</h2>
     <div class="containt-redes d-flex justify-content-center align-items-center">
-      <img src=".:/../../../../assets/img/logo-icons/discord.png" alt="">
-      <img src=".:/../../../../assets/img/logo-icons/facebook.png" alt="">
-      <img src=".:/../../../../assets/img/logo-icons/instagram.png" alt="">
-      <img src=".:/../../../../assets/img/logo-icons/twitter.png" alt="">
+      <a href="https://discord.com/invite/a5dqwnDq7j" target="_blank" rel="noopener noreferrer">
+        <img src="../../../assets/img/logo-icons/discord.png" alt="">
+      </a>
+      <a href="https://www.facebook.com/HellzelsMind?mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer">
+        <img src="../../../assets/img/logo-icons/facebook.png" alt="">
+      </a>
+      <a href="https://instagram.com/hellzelsmind?igshid=MWI4MTIyMDE=" target="_blank" rel="noopener noreferrer">
+        <img src="../../../assets/img/logo-icons/instagram.png" alt="">
+      </a>
+      <a href="https://twitter.com/hellzelsmind" target="_blank" rel="noopener noreferrer">
+        <img src="../../../assets/img/logo-icons/twitter.png" alt="">
+      </a>
     </div>
   </div>
 </footer>

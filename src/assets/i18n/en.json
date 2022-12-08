@@ -1,0 +1,150 @@
+{
+  "lang": "en",
+  "header": {
+    "1": "Hell",
+    "2": "Clinic History",
+    "3": "Diagnosis",
+    "4": "NFTs",
+    "5": "Prejudices?",
+    "6": "Need Help?"
+  },
+  "footer": {
+    "1": "Need Help?",
+    "2": "We care about your mental health, so if you feel that you need help, do not hesitate to ask for it as soon as possible. We leave you lines of attention in the world for contact:",
+    "3": "Friendly Line"
+  },
+  "start": "Start Mint",
+  "close": "CLOSE",
+  "inicio":"START",
+  "home": {
+    "section1": {
+      "title1": "Do we really understand what is inside the head of a person suffering from a",
+      "title2": "Mental Illness?"
+    },
+    "section2": {
+      "title": "Clinic History",
+      "p": "Delve into the subconscious of one of the most twisted minds to ever walk the world of NFTs. Thousands of pieces that will show you the suffering, pain and tragedy of a dark and gloomy character. Access their world and be part of the select community that will have exclusive access to the MISTERY BOX, an immersive VIDEO GAME experience and an ANIMATED SERIES."
+    },
+    "section3": {
+      "title": "Super Me",
+      "p1": "Hellzel's Mind is a collection of 6,666 illustrated pieces from the animated series with 300 exclusive NFTs that will come in GIF animation format and access to the MISTERY BOX. A graphic proposal inspired by the 30s delivered in representative pieces of different mental illnesses.",
+      "p2": "The funds raised with the MINT will be used for the development of the series and the ecosystem in general."
+    },
+    "carrusel": {
+      "1": "anxiety",
+      "2": "autism",
+      "3": "bipolar",
+      "4": "Depression",
+      "5": "schizophrenia",
+      "6": "hellzel",
+      "7": "panic",
+      "8": "ptsd",
+      "9": "tda",
+      "10": "tdi",
+      "11": "eating disorder"
+    },
+    "section4": {
+      "title": "Utilities",
+      "p": "50% of the profits from the series and the hellzels mind ecosystem will be distributed among the holders, who will also have these benefits:",
+      "1": "Being executive producers of the series",
+      "2": "Marketplace with exclusive merch",
+      "3": "Exclusive Giveaways",
+      "4": "Be part of the development of the video game",
+      "5": "Exclusive access to ecosystem scoops (NFTs redeemable for articles from the series, airdrops from our allied partners, among others)",
+      "6": "Possibility of attending the premiere of the series.",
+      "p2": "50% of the royalties will be sent to institutions that promote mental health. Hellzel offers a liquidity pool for 36 months with a yield of 0.5%.",
+      "p3": "An immersive experience gallery will be created within the metaverse allowing the community to obtain exclusive, custom and unique content within Hellzel's Land."
+    },
+    "section5": {
+      "title": "Mystery Box",
+      "p": "Being part of this ecosystem will have multiple benefits for the community, such as the Mystery Box, there will only be 300 mystery boxes that can be obtained through NFTs."
+    },
+    "section6": {
+      "1": "3D sculpture (22cm)",
+      "2": "NFT in Lenticular version",
+      "3": "Stickers",
+      "4": "Hoodie",
+      "5": "Hellzel's Special Book",
+      "6": "Trailer Private QR",
+      "7": "Personality test"
+    },
+    "section7": {
+      "title": "Roadmap",
+      "phase": "Q3 2022 OBJECTIVES",
+      "1": "Creation of the entire Hellzel collection: 6,666 illustrated pieces.",
+      "2": "Branding Hellzel.",
+      "3": "Script of the first chapter.",
+      "4": "Hellzel promo script.",
+      "5": "Web Structure.",
+      "6": "Web design.",
+      "7": "Rigg creation of characters for animation, expression sheet and turn around.",
+
+      "b1": "Design and development of VR experience.",
+      "b2": "Promo Launch.",
+      "b3": "Web Launch."
+    },
+    "final":{
+      "1":"What dark disease haunts you?",
+      "2":"Find your personalized NFT and enter the perverse world of Hellzel's Mind.",
+      "3":"Congratulations your NFT is"
+    },
+    "brain": {
+      "title1": "Me",
+      "p1": "A mind that is childish and retarded for its age, which has begun to discover the darker side of its interior, without understanding that it is an incubator of countless diseases with which it must cope with a life full of ignorance, little empathy, bullying and lack of love. An introverted, shy, sensitive and fearful being who little by little will create within himself his ideal fantasy world.",
+      "title2": "Diagnosis",
+      "p2": "We explore mental illness in an immersive way through the life of a young man who must face his darkest side, in a society that still does not understand what it is like to live prisoner of its most perverse thoughts. Mental education through sarcastic humor,",
+      "p2-b":"raw and visceral.",
+      "enfermedad1": "Anxiety",
+      "enfermedad2": "Depression",
+      "enfermedad3": "Eating",
+      "enfermedad3-b": "Disorder",
+      "enfermedad4": "TEPT",
+      "enfermedad5": "Attention",
+      "enfermedad5-b": "deficit",
+
+      "enfermedad6": "Bipolarity",
+      "enfermedad7": "Schizophrenia",
+      "enfermedad8": "DiD",
+      "enfermedad9": "Autism",
+      "enfermedad10": "Panic",
+      "enfermedad10-b": "Disorder",
+
+      "p3": "Hellzel's polar opposite, his dark side, his most hidden thoughts, his desire to devour, in a literal way, the world and whoever crosses his path. Haughty, angry, uncontrolled and heartless. He is not afraid of the consequences because for him they are non-existent, he does not have an ounce of empathy or love, since he does not know him."
+    },
+    "faq": {
+      "prejuicios":"Prejudices",
+      "title":" Frequent Questions",
+      "1":"How many pieces will be in the NFT collection?",
+      "2":"Mint Price?",
+      "3":"Where in the Blockchain will the mint be?",
+      "4":"What will I get with the purchase of the NFT?",
+      "5":"Will there be more NFT characters?",
+      "6":"How will the animated series be financed?",
+      "7":"How many episodes will the series have?",
+      "8":"What will be the playback platform?",
+
+      "r1":"This is a collection of 6,666 illustrated pieces fueled by the animated series exclusively for 300 NFTs that will come in GIF animation format and access to the MISTERY BOX.",
+      "r2":"Each graphic and unique piece of Hellzel will cost 230 USDT, which will give you exclusive access to the entire ecosystem of the project.",
+      "r3":"Ethereum, one of the best platforms to run smart contracts and decentralized operations.",
+      "r4":"Each NFT holder will be a direct part of the creation of the ecosystem on the different platforms, receiving lifetime benefits and access to exclusive merch collections, a Metaverse gallery, and video games.",
+      "r5":"The series will leave open the possibility of adding new collections, with other characters, elements and places that appear in it, making the Universe expand more and more.",
+      "r6":"With the budget obtained thanks to the holders with the purchase of the first launched collection of 6,666 illustrated pieces.",
+      "r7":"A first season is stipulated with 10 episodes of a maximum duration of 7 minutes, premiering the pilot chapter in the month of October.",
+      "r8":"Counting on the tools and opportunities provided by Web3, Hellzel's Mind will be part of the list of exclusive content of the MEST platform, a streaming channel mounted on Blockchain in order to make an entire community part of its execution and development of the hand of independent creators."
+
+    }
+  },
+
+  "mint": {
+    "title1-a":"Mint Date",
+    "title1-b":"Limited",
+    "1":"Supply",
+    "2":"Price",
+    "3":"Max",
+    "price-data":"Price per NFT",
+    "setmax":"Set Max"
+
+
+
+  }
+}

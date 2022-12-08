@@ -40,20 +40,28 @@
     }
   }
   &-main {
-    margin-top: -115px;
-    height: 97vh;
+    margin-top: -250px;
+    height: 1080px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     @media screen and (max-width: 1320px) {
       height: 100%;
+      margin-top: -50px;
     }
     @media screen and (max-width: 840px) {
       margin-top: -35px;
     }
     &-btnHome {
       max-width: 1300px;
+      width: 80%;
       margin: 0 auto;
       div {
         cursor: pointer;
-        top: -5rem;
+        top: 8rem;
+        @media screen and (max-width: 1320px) {
+          top: -4rem;
+        }
         @media screen and (max-width: 840px) {
           top: -3.5rem;
         }

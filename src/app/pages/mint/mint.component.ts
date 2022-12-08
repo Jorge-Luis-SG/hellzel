@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import SwiperCore, {
   Pagination,
   Virtual,
@@ -6,6 +7,7 @@ import SwiperCore, {
   Swiper,
 } from 'swiper';
 SwiperCore.use([Pagination, Virtual, Autoplay]);
+
 
 
 
@@ -18,7 +20,19 @@ SwiperCore.use([Virtual]);
   styleUrls: ['./mint.component.scss'],
 })
 export class MintComponent implements OnInit {
-  constructor() {}
+  constructor(private title: Title) {
+    let localstorage = localStorage.getItem('value');
+
+    if (localstorage == 'en') {
+      title.setTitle(
+        "Hellzel's Mind | MINT Now! | NFT Collection | Mental Illness"
+      );
+    } else if (localstorage == 'es') {
+      title.setTitle(
+        "Hellzel's Mind | ¡Haz MINT Ya! | Colección NFT | Enfermedades Mentales"
+      );
+    }
+  }
 
   ngOnInit(): void {
     var nft = new Swiper('.nft-mint', {
