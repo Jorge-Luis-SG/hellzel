@@ -262,7 +262,7 @@ export class FinalComponent implements OnInit {
         id: 10,
         pregunta: 'title',
         gris1: 'res1',
-        morado:
+        verde:
           "res2",
         gris2: 'res3',
 
