@@ -1,10 +1,9 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { TriviaEs } from '../final/basePreguntasEs'
-import { TriviaEn } from '../final/basePreguntasEn'
+import { TriviaEs } from './basepreguntasEs';
+import { TriviaEn } from './basepreguntasEn';
 
 import * as $ from 'jquery';
-import { type } from 'jquery';
-// import './base-preguntas'
+
 @Component({
   selector: 'app-final',
   templateUrl: './final.component.html',
