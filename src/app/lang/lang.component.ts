@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
 
@@ -7,19 +7,12 @@ import { TranslateService } from '@ngx-translate/core';
   templateUrl: './lang.component.html',
   styleUrls: ['./lang.component.scss']
 })
-export class LangComponent implements OnInit {
+export class LangComponent{
 
-
-  ngOnInit(): void {
-  }
   lange = ' ';
   value = ' ';
   code1 = "";
   code2 = "";
-
-
-
-
   en() {
     localStorage.setItem('value', 'en');
     this.code1="active";
@@ -50,9 +43,7 @@ export class LangComponent implements OnInit {
         this.code1="active";
         this.code2="";
       }
-
     }
-
     translate.addLangs(['en', 'es']);
     const lang = translate.getBrowserLang();
     if (lang !== 'es' && lang !== 'en') {

@@ -17,9 +17,9 @@ export class TriviaEn{
         id: 2,
         pregunta: " You're in a place full of people. What is your reaction?:",
         gris1:
-          'Planear cómo descuartizar a cada uno de ellos mientras saludas sarcásticamente.',
-        verde: 'Esconderte en el rincón más oscuro que encuentres.',
-        gris2: 'Sacar una escopeta e ir disparando al que se te atraviese.',
+          'Plan how to butcher each of them while giving a sarcastic hello.',
+        verde: 'Hide yourself in the darkest corner you can find.',
+        gris2: 'Pull out a shotgun and shoot whoever gets in your way.',
         nft: 'depression',
         name: 'Depresión',
       },
@@ -108,15 +108,14 @@ export class TriviaEn{
       },
       10: {
         id: 10,
-        pregunta: 'title',
-        gris1: 'res1',
+        pregunta: 'You go out for a walk in the dark forest that catch your attention and…',
+        gris1: 'You find the perfect place to burry the body of the dumb boy that bothers you all the time.',
         verde:
-          "res2",
-        gris2: 'res3',
-
-        nft: 'nft',
-        name: 'name',
-      },
+          'Suddenly a sensation of fear, chase, shiver and hard heartbeats hits you, like a serial killer is chasing you.',
+        gris2: 'You relax yourself and enjoy the creepy landscape. ',
+        nft: 'panico',
+        name: 'Panic Disorder',
+      },
       11: {
         id: 11,
         pregunta: 'If someone makes fun of you, you:',

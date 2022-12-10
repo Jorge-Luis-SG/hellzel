@@ -61,3 +61,45 @@
     </div>
   </div>
 </div>
+
+<!--
+     Preguntas que se muestran por defecto
+    <div class="col-12 col-lg-6 faq-box2 d-flex align-items-center justify-content-center">
+      <div>
+        <h3 class="text-center">{{'home.faq.prejuicios' | translate}}</h3>
+        <p class="d-flex align-items-center justify-content-center me"> {{'home.faq.title' | translate}}</p>
+
+        <div *ngIf="('lang' | translate)== 'es'; else elseBlock;">
+          <div *ngFor="let faq of faqEs"
+            class="faq-box2-list d-flex flex-column justify-content-center align-items-center">
+            <app-btn2 class="faq-btn" text="{{faq.question}}"></app-btn2>
+          </div>
+        </div>
+        <ng-template #elseBlock>
+          <div *ngFor="let faq of faqEn"
+            class="faq-box2-list d-flex flex-column justify-content-center align-items-center">
+            <app-btn2 class="faq-btn" text="{{faq.question}}"></app-btn2>
+          </div>
+        </ng-template>
+      </div>
+    </div>
+
+  
+    <div class="faq-screen">
+      <div *ngIf="('lang' | translate)== 'es'; else elseBlock2;" class="d-flex flex-column align-items-center">
+        <div *ngFor="let faq of faqEs; index as i">
+          <app-paper id="faq{{i}}" [title]="faq.question" [desc]="faq.answer">
+          </app-paper>
+        </div>
+      </div>
+      <ng-template #elseBlock2 class="d-flex flex-column align-items-center">
+        <div *ngFor="let faq of faqEn; index as i">
+          <app-paper id="faq{{i}}" title="{{faq.question}}" desc="{{faq.answer}}">
+          </app-paper>
+        </div>
+      </ng-template>
+
+    </div>
+
+  </div>
+</div> -->

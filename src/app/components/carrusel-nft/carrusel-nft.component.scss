@@ -1,0 +1,111 @@
+@import "../../../styles.scss";
+
+.carrusel {
+  max-width: 650px;
+  min-width: 500px;
+  margin: 0 auto;
+  width: 100%;
+  @media screen and (max-width: 520px) {
+    max-width: 320px;
+    margin-top: -1.75rem;
+    min-width: auto;
+  }
+  .nft {
+    background-image: url(../../../assets/img/picture/nfts/bg-nft.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    height: 500px;
+    @media screen and (max-width: 1225px) {
+      width: 490px;
+      height: 490px;
+      margin: 0 auto;
+    }
+    @media screen and (max-width: 992px) {
+      width: 495px;
+      height: 485px;
+    }
+    @media screen and (max-width: 520px) {
+      width: 290px;
+      height: 288px;
+    }
+    &-img {
+      max-width: 380px;
+      width: 100%;
+      border-radius: 1.2rem;
+      @media screen and (max-width: 1225px) {
+        max-width: 345px;
+      }
+      @media screen and (max-width: 992px) {
+        height: 320px;
+        width: 320px;
+      }
+      @media screen and (max-width: 520px) {
+        height: 230px;
+        width: 230px;
+      }
+    }
+  }
+  h3 {
+    font-family: "Mr Dafoe";
+    color: $white;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 4rem;
+    line-height: 4rem;
+    max-width: 100px;
+    margin: -1.5rem auto 0;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (max-width: 520px) {
+      font-size: 2.5rem;
+      line-height: 2.5rem;
+    }
+  }
+}
+
+// BOTONES DE NEXT Y PREV
+.swiper-button-prev,
+.swiper-button-next {
+  background-color: $white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  bottom: 75px;
+  margin-top: auto;
+  @media screen and (max-width: 520px) {
+  bottom: 83px;
+
+  }
+  &::after {
+    content: "";
+    line-height: 0;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 25px;
+    width: 25px;
+  }
+  @media screen and (max-width: 520px) {
+    width: 35px;
+    height: 35px;
+    &::after {
+      content: "";
+      height: 18px;
+      width: 18px;
+    }
+  }
+}
+.swiper-button-prev {
+  &::after {
+    background-image: url(../../../assets/img/logo-icons/left.svg);
+  }
+}
+.swiper-button-next {
+  &::after {
+    background-image: url(../../../assets/img/logo-icons/right.svg);
+  }
+}

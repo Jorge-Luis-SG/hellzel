@@ -58,9 +58,6 @@ export class HomeComponent implements OnInit {
   handleAnimation(anim: any) {
     this.anim = anim;
   }
-  stop() {}
-  play() {}
-
   roap1() {
     $('#roap2').removeClass('active');
     $('#roap1').addClass('active');

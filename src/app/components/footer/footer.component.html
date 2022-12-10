@@ -16,10 +16,10 @@
       <img src="../../../assets/img/logo-icons/twitter.png" alt="">
     </a>
   </div>
- <div class="helpline-div d-flex flex-column align-items-center justify-content-center">
-  <span>{{'footer.3' | translate}}</span>
-  <a id="url" href="{{url}}" target="_blank" class="helpline">Hellzel.com/help</a>
- </div>
+  <div class="helpline-div d-flex flex-column align-items-center justify-content-center">
+    <span>{{'footer.3' | translate}}</span>
+    <a id="url" href="{{url}}" target="_blank" class="helpline">Hellzel.com/help/{{pais}}</a>
+  </div>
   <div class="lang position-relative ">
     <app-lang class="lang-component"></app-lang>
   </div>
@@ -29,72 +29,9 @@
   <app-paises-select class="paper-pais"></app-paises-select>
 
   <div class="paper-pais position-absolute d-flex align-items-start">
-    <div class="d-flex flex-column paper-pais-a">
-      <a (click)="data('https://www.asistenciaalsuicida.org.ar/ayuda','Argentina')"
-      class="paper-pais-title text-center">Argentina</a>
-
-      <a (click)="data('https://www.lifeline.org.au/','Australia')"
-      class="paper-pais-title text-center">Australia</a>
-
-      <a (click)="data('http://www.telefonseelsorge.at/','Austria')"
-      class="paper-pais-title text-center">Austria</a>
-
-      <a (click)="data('https://www.zelfmoord1813.be/','Bélgica')"
-      class="paper-pais-title text-center">Bélgica</a>
-
-      <a (click)="data('https://www.crisisservicescanada.ca/en/','Canadá')"
-      class="paper-pais-title text-center">Canadá</a>
-
-      <a (click)="data('https://telefonodelaesperanza.org/necesito-ayuda','Chile')"
-      class="paper-pais-title text-center">Chile</a>
-
-      <a (click)="data('https://www.minsalud.gov.co/salud/publica/SMental/Paginas/directorio-suicidio.aspx','Colombia')"
-      class="paper-pais-title text-center">Colombia</a>
-
-      <a (click)="data('https://www.regionh.dk/english/Healthcare-Services/Emergency-Medical-Services/Archive/Pages/Suicidal.aspx','Dinamarca')"
-      class="paper-pais-title text-center">Dinamarca</a>
-
-      <a (click)="data('https://suicideecoute.pads.fr/accueil','Francia')"
-      class="paper-pais-title text-center">Francia</a>
-
-      <a (click)="data('https://www.telefonseelsorge.de/','Alemania')"
-      class="paper-pais-title text-center">Alemania</a>
-
-      <a (click)="data('https://samaritans.org.hk/','Hong Kong')"
-      class="paper-pais-title text-center">Hong Kong</a>
-
-      <a (click)="data('https://www.mentalhealthireland.ie/need-help-now/','Irlanda')"
-      class="paper-pais-title text-center">Irlanda</a>
-
-      <a (click)="data('https://consejociudadanomx.org/index.php/es/','México')"
-      class="paper-pais-title text-center">México</a>
-
-      <a (click)="data('https://www.lifeline.org.nz/','Nueva Zelanda')"
-      class="paper-pais-title text-center">Nueva Zelanda</a>
-
-      <a (click)="data('https://www.sos.org.sg/','Singapur')"
-      class="paper-pais-title text-center">Singapur</a>
-
-      <a (click)="data('https://www.sadag.org/','Sudáfrica')"
-      class="paper-pais-title text-center">Sudáfrica</a>
-
-      <a (click)="data('https://telefonodelaesperanza.org/','España')"
-      class="paper-pais-title text-center">España</a>
-
-      <a (click)="data('https://mind.se/hitta-hjalp/sjalvmordslinjen/','Suecia')"
-      class="paper-pais-title text-center">Suecia</a>
-
-      <a (click)="data('https://www.143.ch/','Suiza')"
-      class="paper-pais-title text-center">Suiza</a>
-
-      <a (click)="data('https://www.thecalmzone.net/','Reino Unido')"
-      class="paper-pais-title text-center">Reino Unido</a>
-
-      <a (click)="data('https://suicidepreventionlifeline.org/','Estados Unidos')"
-      class="paper-pais-title text-center">Estados Unidos</a>
-
-      <a (click)="data('https://blog.opencounseling.com/hotlines-ng/','Nigeria')"
-      class="paper-pais-title text-center">Nigeria</a>
+    <div class="d-block paper-pais-a">
+      <a *ngFor="let pais of getPais;" (click)="data( pais.url ,pais.pais)"
+        class="paper-pais-title text-center d-block">{{pais.pais}}</a>
     </div>
   </div>
 

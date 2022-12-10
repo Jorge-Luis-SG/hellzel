@@ -228,6 +228,9 @@
         background-image: url(../../../../assets/img/etc/contenedor4v.png);
         height: 770px;
         max-width: 470px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
         @media screen and (max-width: 470px) {
           height: 560px;
           width: 320px;

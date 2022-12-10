@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { AnimationItem } from 'lottie-web';
 import { AnimationOptions } from 'ngx-lottie';
 import * as $ from 'jquery';
+import { dataEn } from './baseEn';
+import { dataEs } from './baseEs';
 
 @Component({
   selector: 'app-faq',
@@ -12,6 +14,16 @@ export class FaqComponent implements OnInit {
   hands: AnimationOptions = {
     path: '../../../../assets/img/etc/animation/hands.json',
   };
+// BASE DE DATOS DE PREGUNTAS
+  dataEn = new dataEn();
+  faqEn= this.dataEn.faq
+
+  dataEs = new dataEs();
+  faqEs= this.dataEs.faq
+// BASE DE DATOS DE PREGUNTAS
+
+
+
   constructor() {
     $(document).ready(function (e) {
       $('.faq-btn').each(function (indice, elemento) {

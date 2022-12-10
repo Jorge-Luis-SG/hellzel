@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
 import { CommonService } from 'src/app/common.service';
 import { PaisesSelectComponent } from '../paises-select/paises-select.component';
+import { Paises } from './paises';
 
 @Component({
   selector: 'app-footer',
@@ -9,9 +10,13 @@ import { PaisesSelectComponent } from '../paises-select/paises-select.component'
   styleUrls: ['./footer.component.scss'],
 })
 export class FooterComponent implements OnInit {
-  location: any;
+  location
+
   url;
   pais;
+
+  paises = new Paises();
+  getPais = this.paises.dataPais;
 
   data(url, pais) {
     this.url = url;
@@ -34,98 +39,97 @@ export class FooterComponent implements OnInit {
 
   ngOnInit() {
     this.commomSvc.getLocation().subscribe((response) => {
-      console.log(response);
       this.location = response;
-
-      if (this.location.country_code == 'AR') {
-        this.url = "https://www.asistenciaalsuicida.org.ar/ayuda";
-        this.pais = "Argentina";
+      switch (this.location.country_code) {
+        case 'AR':
+          this.url = this.getPais[0].url;
+          this.pais = this.getPais[0].pais;
+          break;
+        case 'AU':
+          this.url = this.getPais[1].url;
+          this.pais = this.getPais[1].pais;
+          break;
+        case 'AT':
+          this.url = this.getPais[2].url;
+          this.pais = this.getPais[2].pais;
+          break;
+        case 'BE':
+          this.url = this.getPais[3].url;
+          this.pais = this.getPais[3].pais;
+          break;
+        case 'CA':
+          this.url = this.getPais[4].url;
+          this.pais = this.getPais[4].pais;
+          break;
+        case 'CL':
+          this.url = this.getPais[5].url;
+          this.pais = this.getPais[5].pais;
+          break;
+        case 'CO':
+          this.url = this.getPais[6].url;
+          this.pais = this.getPais[6].pais;
+          break;
+        case 'DK':
+          this.url = this.getPais[7].url;
+          this.pais = this.getPais[7].pais;
+          break;
+        case 'FR':
+          this.url = this.getPais[8].url;
+          this.pais = this.getPais[8].pais;
+          break;
+        case 'DE':
+          this.url = this.getPais[9].url;
+          this.pais = this.getPais[9].pais;
+          break;
+        case 'HK':
+          this.url = this.getPais[10].url;
+          this.pais = this.getPais[10].pais;
+          break;
+        case 'IE':
+          this.url = this.getPais[11].url;
+          this.pais = this.getPais[11].pais;
+          break;
+        case 'MX':
+          this.url = this.getPais[12].url;
+          this.pais = this.getPais[12].pais;
+          break;
+        case 'NZ':
+          this.url = this.getPais[13].url;
+          this.pais = this.getPais[13].pais;
+          break;
+        case 'SG':
+          this.url = this.getPais[14].url;
+          this.pais = this.getPais[14].pais;
+          break;
+        case 'ZA':
+          this.url = this.getPais[15].url;
+          this.pais = this.getPais[15].pais;
+          break;
+        case 'ES':
+          this.url = this.getPais[16].url;
+          this.pais = this.getPais[16].pais;
+          break;
+        case 'SE':
+          this.url = this.getPais[17].url;
+          this.pais = this.getPais[17].pais;
+          break;
+        case 'CH':
+          this.url = this.getPais[18].url;
+          this.pais = this.getPais[18].pais;
+          break;
+        case 'GB':
+          this.url = this.getPais[19].url;
+          this.pais = this.getPais[19].pais;
+          break;
+        case 'NG':
+          this.url = this.getPais[20].url;
+          this.pais = this.getPais[20].pais;
+          break;
+        default:
+          this.url = this.getPais[21].url;
+          this.pais = this.getPais[21].pais;
+          break;
       }
-      else if (this.location.country_code == 'AU') {
-        this.url = "https://www.lifeline.org.au/";
-        this.pais = "Australia";
-      }
-      else if (this.location.country_code == 'AT') {
-        this.url = "http://www.telefonseelsorge.at/";
-        this.pais = "Austria";
-      }
-      else if (this.location.country_code == 'BE') {
-        this.url = "https://www.zelfmoord1813.be/";
-        this.pais = "Bélgica";
-      }
-      else if (this.location.country_code == 'CA') {
-        this.url = "https://www.crisisservicescanada.ca/en/";
-        this.pais = "Canadá";
-      }
-      else if (this.location.country_code == 'CL') {
-        this.url = "https://telefonodelaesperanza.org/necesito-ayuda";
-        this.pais = "Chile";
-      }
-      else if (this.location.country_code == 'CO') {
-        this.url = "https://www.minsalud.gov.co/salud/publica/SMental/Paginas/directorio-suicidio.aspx";
-        this.pais = "Colombia";
-      }
-      else if (this.location.country_code == 'DK') {
-        this.url = "https://www.regionh.dk/english/Healthcare-Services/Emergency-Medical-Services/Archive/Pages/Suicidal.aspx";
-        this.pais = "Dinamarca";
-      }
-      else if (this.location.country_code == 'FR') {
-        this.url = "https://suicideecoute.pads.fr/accueil";
-        this.pais = "Francia";
-      }
-      else if (this.location.country_code == 'DE') {
-        this.url = "https://www.telefonseelsorge.de/";
-        this.pais = "Alemania";
-      }
-      else if (this.location.country_code == 'HK') {
-        this.url = "https://samaritans.org.hk/";
-        this.pais = "Hong Kong";
-      }
-      else if (this.location.country_code == 'IE') {
-        this.url = "https://www.mentalhealthireland.ie/need-help-now/";
-        this.pais = "Irlanda";
-      }
-      else if (this.location.country_code == 'MX') {
-        this.url = "https://consejociudadanomx.org/index.php/es/";
-        this.pais = "México";
-      }
-      else if (this.location.country_code == 'NZ') {
-        this.url = "https://www.lifeline.org.nz/";
-        this.pais = "Nueva Zelanda";
-      }
-      else if (this.location.country_code == 'SG') {
-        this.url = "https://www.sos.org.sg/";
-        this.pais = "Singapur";
-      }
-      else if (this.location.country_code == 'ZA') {
-        this.url = "https://www.sadag.org/";
-        this.pais = "Sudáfrica";
-      }
-      else if (this.location.country_code == 'ES') {
-        this.url = "https://telefonodelaesperanza.org/";
-        this.pais = "España";
-      }
-      else if (this.location.country_code == 'SE') {
-        this.url = "https://mind.se/hitta-hjalp/sjalvmordslinjen/";
-        this.pais = "Suecia";
-      }
-      else if (this.location.country_code == 'CH') {
-        this.url = "https://www.143.ch/";
-        this.pais = "Suiza";
-      }
-      else if (this.location.country_code == 'GB') {
-        this.url = "https://www.thecalmzone.net/";
-        this.pais = "Reino Unido";
-      }
-      else if (this.location.country_code == 'NG') {
-        this.url = "https://blog.opencounseling.com/hotlines-ng/";
-        this.pais = "Nigeria";
-      }
-      else {
-        this.url = "https://suicidepreventionlifeline.org/";
-        this.pais = "Estados Unidos";
-      }
-
     });
   }
 }

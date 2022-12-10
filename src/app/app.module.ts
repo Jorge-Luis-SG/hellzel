@@ -27,6 +27,7 @@ import { MintComponent } from './pages/mint/mint.component';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { LangComponent } from './lang/lang.component';
+import { CarruselNftComponent } from './components/carrusel-nft/carrusel-nft.component';
 // import { SpinnerInterceptor } from './components/spinner/spinner.interceptor';
 
 
@@ -54,7 +55,8 @@ export function playerFactory() {
     PaisesSelectComponent,
     SpinnerComponent,
     MintComponent,
-    LangComponent
+    LangComponent,
+    CarruselNftComponent
   ],
   imports: [
     BrowserModule,

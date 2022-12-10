@@ -11,6 +11,7 @@ export class HeaderComponent implements OnInit {
 
     let welcome = () => {
       $('.header-welcome').hide();
+      $('.header-welcome').css('display', 'none');
     };
     $(document).ready(function () {
       $('.header-menu-movil li a').click(()=>{
