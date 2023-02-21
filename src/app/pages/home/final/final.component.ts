@@ -25,7 +25,7 @@ export class FinalComponent implements OnInit {
   //Trivia english
   TriviaEn= new TriviaEn()
 
-
+  // git switch -c
   //FUNCION DE LA TRIVIA, ESTO ES LA PRINCIPAL
   trivia(e): any {
     let id = this.dataPreguntas[0][e].id;
