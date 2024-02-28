@@ -19,7 +19,7 @@ import { NgxParallaxScrollModule } from 'ngx-parallax-scroll';
 import { WelcomeComponent } from './pages/welcome/welcome.component';
 import { PaperComponent } from './components/paper/paper.component';
 import { FaqComponent } from './pages/home/faq/faq.component';
-import { FinalComponent } from './pages/home/final/final.component';
+import { TriviaComponent } from './pages/home/trivia/trivia.component';
 import { PaisesSelectComponent } from './components/paises-select/paises-select.component';
 import { SpinnerComponent } from './components/spinner/spinner.component';
 import { HttpClient, HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
@@ -28,7 +28,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { LangComponent } from './lang/lang.component';
 import { CarruselNftComponent } from './components/carrusel-nft/carrusel-nft.component';
-// import { SpinnerInterceptor } from './components/spinner/spinner.interceptor';
+import { DynamicClassesDirective } from './directives/dynamic-classes.directive';
 
 
 
@@ -37,7 +37,7 @@ export function playerFactory() {
 }
 
 @NgModule({
-  schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   declarations: [
     AppComponent,
     HeaderComponent,
@@ -51,12 +51,13 @@ export function playerFactory() {
     WelcomeComponent,
     PaperComponent,
     FaqComponent,
-    FinalComponent,
+    TriviaComponent,
     PaisesSelectComponent,
     SpinnerComponent,
     MintComponent,
     LangComponent,
-    CarruselNftComponent
+    CarruselNftComponent,
+    DynamicClassesDirective
   ],
   imports: [
     BrowserModule,
@@ -75,7 +76,6 @@ export function playerFactory() {
     })
   ],
   providers: [
-    // {provide: HTTP_INTERCEPTORS, useClass: SpinnerInterceptor, multi: true }
   ],
   bootstrap: [AppComponent]
 })

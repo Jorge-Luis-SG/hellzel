@@ -84,11 +84,9 @@
       "p2-b":"raw and visceral.",
       "enfermedad1": "Anxiety",
       "enfermedad2": "Depression",
-      "enfermedad3": "Eating",
-      "enfermedad3-b": "Disorder",
+      "enfermedad3": "Eating Disorder",
       "enfermedad4": "TEPT",
-      "enfermedad5": "Attention",
-      "enfermedad5-b": "deficit",
+      "enfermedad5": "Deficit Attention",
 
       "enfermedad6": "Bipolarity",
       "enfermedad7": "Schizophrenia",
@@ -131,8 +129,105 @@
     "3":"Max",
     "price-data":"Price per NFT",
     "setmax":"Set Max"
-
-
-
+  },
+  "trivia": {
+  "1": {
+    "ask": "When you wake up what is the first thing you want to do? ",
+    "answer1": "Murder a couple people for how they looked at you the day before.",
+    "answer2": "Keep sleeping, because you feel extremely tired, as if you had buried a body.",
+    "answer3": "Go down to the kitchen to get a knife... to prepare breakfast, hunger is stalking you.",
+    "nft": "ansiedad",
+    "name": "Anxiety"
+  },
+  "2": {
+    "ask": " You're in a place full of people. What is your reaction?:",
+    "answer1": "Plan how to butcher each of them while giving a sarcastic hello.",
+    "answer2": "Hide yourself in the darkest corner you can find.",
+    "answer3": "Pull out a shotgun and shoot whoever gets in your way.",
+    "nft": "depression",
+    "name": "Depresión"
+  },
+  "3": {
+    "ask": "You look in the mirror and the first thing you think about what you see is:",
+    "answer1": "Much wonder of existence, you are a God: strong and powerful.",
+    "answer2": "You don't feel like you no matter how hard you try, it's not your body, it's not your reality and you want it to end once and for all.",
+    "answer3": "You can't help the evil look in your eyes, crying out for you to end it all.",
+    "nft": "trastorno-alimenticio",
+    "name": "Eating disorder/anorexia"
+  },
+  "4": {
+    "ask": "If you remember an event from the past that caused you harm:",
+    "answer1": "You skip it to go on with your shitty daily life.",
+    "answer2": "You get so deep into it that anxiety, fear and anguish take over you and generate a serious crisis.",
+    "answer3": "You plan in the dark how you will vilely take revenge on those who made you suffer.",
+    "nft": "ptsd",
+    "name": "Post Traumatic Stress"
+  },
+  "5": {
+    "ask": "Let's define if you are dismissed or just an idiot. When you talk to someone else your mind automatically:",
+    "answer1": "You concentrates on what the other says, even if he is not interested in a bit.",
+    "answer2": "You go straight to Neverland to try to find the flying potion. ",
+    "answer3": "You hear snippets of the conversation, but you really want to be strafing him. ",
+    "nft": "tda",
+    "name": "Attention deficit"
+  },
+  "6": {
+    "ask": "You are enjoying a nice afternoon watching your co-workers. thinking how to kill each one of them and suddenly:",
+    "answer1": "They discover you wanting to murder them.",
+    "answer2": "Your mood suddenly changes and you just want to lock yourself up to cut your veins.",
+    "answer3": "You experience unparalleled satisfaction when imagining liters of blood running through the office. ",
+    "nft": "bipolar",
+    "name": "Depression Bipolarity"
+  },
+  "7": {
+    "ask": "If you suffer from a lost of consciousness you: ",
+    "answer1": "You remember what happened before and after the crisis..",
+    "answer2": " You wake up the next day with blood drops over your clothes without remembering what happened.",
+    "answer3": "You try to connect the dots to decipher the mental gaps with which you were left. ",
+    "nft": "tdi",
+    "name": "Dissociative identity disorder (Penny)"
+  },
+  "8": {
+    "ask": "At school you noticed a brief delay in your learning because:",
+    "answer1": "You were easily distracted by hair pulling and biting your teammates.",
+    "answer2": "You had problems with language and normal cognitive development.",
+    "answer3": "You didn't really go, sitting at school bored you.",
+    "nft": "autismo",
+    "name": "Autism"
+  },
+  "9": {
+    "ask": "Have you ever experienced...",
+    "answer1": "Feeling of pleasure when inflicting pain on someone else?.",
+    "answer2": "Hallucinations of beings, smells or situations that are not real?",
+    "answer3": "Extreme anguish when going out to meet society and what is considered normal?",
+    "nft": "esquizofrenia",
+    "name": "Schizophrenia"
+  },
+  "10": {
+    "ask": "You go out for a walk in the dark forest that catch your attention and…",
+    "answer1": "You find the perfect place to burry the body of the dumb boy that bothers you all the time.",
+    "answer2": "Suddenly a sensation of fear, chase, shiver and hard heartbeats hits you, like a serial killer is chasing you.",
+    "answer3": "You relax yourself and enjoy the creepy landscape. ",
+    "nft": "panico",
+    "name": "Panic Disorder"
+  },
+  "11": {
+    "ask": "If someone makes fun of you, you:",
+    "answer1": "You ignore it and think that your mental health comes first.",
+    "answer2": "You secretly plan how to get his guts out (and you make it happen)",
+    "answer3": "You're going to cry in a corner of your room.",
+    "nft": "tdi",
+    "name": "Dissociative Identity Disorder (Penny)"
+  },
+  "12": {
+    "ask": "To resolve a conflict you choose to:",
+    "answer1": "Dialogue with the parties and reconcile. ",
+    "answer2": "Grab a machete and cut off the head of the person causing your discomfort.",
+    "answer3": "You cross him out of your life and never speak to him again.",
+    "nft": "hellzel",
+    "name": "Dissociative Identity Disorder (Penny)"
   }
+}
+
+
 }

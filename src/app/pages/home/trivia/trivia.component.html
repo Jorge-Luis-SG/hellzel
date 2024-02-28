@@ -1,0 +1,40 @@
+<div class="final d-flex flex-column justify-content-center align-items-center">
+  <a href="https://discord.com/invite/a5dqwnDq7j" target="_blank"><app-btn text="Más"></app-btn></a>
+  <h3 class="text-center">{{'home.final.1' | translate}}</h3>
+  <p class="text-center">{{'home.final.2' | translate}}</p>
+  <div class="paper-container w-100 d-flex justify-content-center">
+    <img src="../../../assets/img/etc/letter.png" class="letter" alt="Open Trivia" (click)="openTrivia()">
+    <div
+      class="paper d-flex flex-column flex-md-row  align-items-center justify-content-initial justify-content-md-center  position-absolute">
+      <div class="paper-box1" *ngIf="!showResult">
+        <div>
+          <h4 class="text-center" id="pregunta">{{'trivia.1.ask' | translate}}</h4>
+          <ul class="ps-0 text-center">
+            <li *ngFor="let item of ['','','']; index as i" (click)="(i+1) == 2 ? select(id) : null">
+              {{'trivia.'+ id +'.answer'+( i + 1 ) | translate}}
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="paper-box2" *ngIf="!showResult">
+        <div>
+          <img src="../../../../assets/img/picture/nft-black.png">
+        </div>
+      </div>
+      <div class="paper-box3" *ngIf="showResult">
+        <h4>{{'home.final.3' | translate}}</h4>
+        <img src="../../../../assets/img/picture/nfts/{{'trivia.'+ id +'.nft'| translate}}.png">
+        <p>{{'trivia.'+ id +'.name'| translate}}</p>
+        <app-btn text="Mint" routerLink="/mint"></app-btn>
+      </div>
+
+      <div class="next position-absolute d-flex flex-column align-items-center justify-content-center"
+        (click)="generate()" *ngIf="!showResult">
+        <img src="../../../../assets/img/picture/finger.png">
+        <app-btn text="{{'next' | translate}}"></app-btn>
+
+      </div>
+    </div>
+  </div>
+
+</div>

@@ -13,14 +13,14 @@
       </div>
       <div class="col-12 col-lg-6 section1-box2 d-flex align-items-end">
         <div class="section1-box2-container">
-          <img src="../../../assets/img/picture/nft1.png" alt="">
+          <img src="./assets/img/picture/nft1.png">
         </div>
       </div>
     </div>
     <ng-lottie containerClass="fire-animation" class="fire-animation" [options]="option"
-      (animationCreated)="animationCreated($event)"></ng-lottie>
+     ></ng-lottie>
   </div>
-  <img src="../../../assets/img/etc/buen-paper.png" class="w-100 buen-paper " alt="">
+  <img src="./assets/img/etc/buen-paper.png" class="w-100 buen-paper ">
   <div class="section2 position-relative">
     <div class="section2-container" id="history">
       <div>
@@ -34,8 +34,8 @@
     <div class="row d-flex align-items-center">
       <div class="section4-box1 col-12 col-lg-6">
         <div class="section4-box1-item d-flex align-items-center justify-content-center" id="nft">
-          <app-title-sub-p title="NFT" sub="{{'home.section3.title' | translate}}" info1="{{'home.section3.p1' | translate}}"
-            info2="{{'home.section3.p2' | translate}}">
+          <app-title-sub-p title="NFT" sub="{{'home.section3.title' | translate}}"
+            info1="{{'home.section3.p1' | translate}}" info2="{{'home.section3.p2' | translate}}">
           </app-title-sub-p>
         </div>
       </div>
@@ -44,7 +44,7 @@
       </div>
     </div>
   </div>
-  <img src="../../../assets/img/etc/buen-paper.png" class="w-100 buen-paper4" alt="">
+  <img src="./assets/img/etc/buen-paper.png" class="w-100 buen-paper4">
   <div class="section5">
     <div class="row justify-content-between">
       <div class="section5-box1 d-flex align-items-center row">
@@ -59,23 +59,8 @@
             <p class="parrafo1 text-center">{{'home.section4.p' | translate}}</p>
             <div class="card">
               <ul>
-                <li>
-                  <div>1</div> {{'home.section4.1' | translate}}
-                </li>
-                <li>
-                  <div>2</div> {{'home.section4.2' | translate}}
-                </li>
-                <li>
-                  <div>3</div> {{'home.section4.3' | translate}}
-                </li>
-                <li>
-                  <div>4</div> {{'home.section4.4' | translate}}
-                </li>
-                <li>
-                  <div>5</div> {{'home.section4.5' | translate}}
-                </li>
-                <li>
-                  <div>6</div> {{'home.section4.6' | translate}}
+                <li *ngFor="let item of ['','','','','','']; index as i">
+                  <div>{{i + 1}}</div> {{'home.section4.'+(i+1) | translate}}
                 </li>
               </ul>
             </div>
@@ -83,7 +68,6 @@
               {{'home.section4.p2' | translate}}
               <br><br>
               {{'home.section4.p3' | translate}}
-
             </p>
           </div>
         </div>
@@ -91,7 +75,8 @@
       <div class="section5-box3 col-12">
         <div class="section5-box3-container d-flex justify-content-between align-items-center">
           <a href="https://discord.com/invite/a5dqwnDq7j" target="_blank"><app-btn text="Join Discord"></app-btn></a>
-          <a href="https://discord.com/invite/a5dqwnDq7j" target="_blank"><img src="../../../assets/img/logo-icons/discord.svg" alt=""></a>
+          <a href="https://discord.com/invite/a5dqwnDq7j" target="_blank"><img
+              src="./assets/img/logo-icons/discord.svg"></a>
         </div>
       </div>
       <div class="section5-box4 col-12">
@@ -108,32 +93,14 @@
       <div class="col-12 col-lg-5 section6-box1 d-flex justify-content-center align-items-center">
         <div class="section6-box1-container d-flex align-items-center">
           <ul>
-            <li>
-              <div></div> {{'home.section6.1' | translate}}
-            </li>
-            <li>
-              <div></div> {{'home.section6.2' | translate}}
-            </li>
-            <li>
-              <div></div> {{'home.section6.3' | translate}}
-            </li>
-            <li>
-              <div></div> {{'home.section6.4' | translate}}
-            </li>
-            <li>
-              <div></div> {{'home.section6.5' | translate}}
-            </li>
-            <li>
-              <div></div> {{'home.section6.6' | translate}}
-            </li>
-            <li>
-              <div></div> {{'home.section6.7' | translate}}
+            <li *ngFor="let item of ['','','','','','','']; index as i">
+              <div></div> {{'home.section6.'+(i+1) | translate}}
             </li>
           </ul>
         </div>
       </div>
       <div class="col-12 col-lg-7 section6-box2 d-flex justify-content-center align-items-center">
-        <img src="../../../assets/img/picture/box.png" alt="">
+        <img src="./assets/img/picture/box.png">
       </div>
     </div>
   </div>
@@ -144,20 +111,12 @@
       <div class="list-roap">
         <div *ngIf="roapActive == false; else elseBlock">
           <ul>
-            <li>{{'home.section7.1' | translate}}</li>
-            <li>{{'home.section7.2' | translate}}</li>
-            <li>{{'home.section7.3' | translate}}</li>
-            <li>{{'home.section7.4' | translate}}</li>
-            <li>{{'home.section7.5' | translate}}</li>
-            <li>{{'home.section7.6' | translate}}</li>
-            <li>{{'home.section7.7' | translate}}</li>
+            <li *ngFor="let item of ['','','','','','','']; index as i">{{'home.section7.'+(i+1) | translate}}</li>
           </ul>
         </div>
         <ng-template #elseBlock>
-          <ul>
-            <li>{{'home.section7.b1' | translate}}</li>
-            <li>{{'home.section7.b2' | translate}}</li>
-            <li>{{'home.section7.b3' | translate}}</li>
+          <ul >
+            <li *ngFor="let item of ['','','']; index as i">{{'home.section7.b'+(i+1) | translate}}</li>
           </ul>
         </ng-template>
       </div>
@@ -173,15 +132,15 @@
 
   </div>
   <div class="buen-paper5 position-relative d-flex align-items-center justify-content-center">
-    <img src="../../../assets/img/etc/buen-paper5.png" class="w-100 h-100" alt="">
+    <img src="./assets/img/etc/buen-paper5.png" class="w-100 h-100">
     <div class="position-absolute">
-      <a href="../../../assets/whitepapers/whitepaper_{{'lang' | translate}}.pdf" download>
-      <app-btn text="Whitepaper"></app-btn></a>
+      <a href="#">
+        <app-btn text="Whitepaper"></app-btn></a>
     </div>
   </div>
   <app-faq></app-faq>
-  <img src="../../../assets/img/etc/buen-paper.png" class="w-100 buen-paper6" alt="">
-  <app-final></app-final>
+  <img src="./assets/img/etc/buen-paper.png" class="w-100 buen-paper6">
+  <app-trivia></app-trivia>
 </div>
 <app-footer></app-footer>
 <app-up></app-up>

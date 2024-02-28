@@ -8,98 +8,13 @@
         <h3 class="text-center">{{'home.faq.prejuicios' | translate}}</h3>
         <p class="d-flex align-items-center justify-content-center me"> {{'home.faq.title' | translate}}</p>
         <div class="faq-box2-list d-flex flex-column justify-content-center align-items-center ">
-          <app-btn2 class="faq-btn" text="{{'home.faq.1' | translate}}"></app-btn2>
-          <app-btn2 class="faq-btn" text="{{'home.faq.2' | translate}}"></app-btn2>
-          <app-btn2 class="faq-btn" text="{{'home.faq.3' | translate}}"></app-btn2>
-          <app-btn2 class="faq-btn" text="{{'home.faq.4' | translate}}"></app-btn2>
-          <app-btn2 class="faq-btn" text="{{'home.faq.5' | translate}}"></app-btn2>
-          <app-btn2 class="faq-btn" text="{{'home.faq.6' | translate}}"></app-btn2>
-          <app-btn2 class="faq-btn" text="{{'home.faq.7' | translate}}"></app-btn2>
-          <app-btn2 class="faq-btn" text="{{'home.faq.8' | translate}}"></app-btn2>
-        </div>
-      </div>
+          <app-btn2 class="faq-btn" text="{{'home.faq.'+(i+1) | translate}}"
+            *ngFor="let item of ['','','','','','','','']; index as i" (click)="openFaq(i + 1)"></app-btn2>
+        </div> 
+      </div> 
     </div>
-    <div class="faq-screen">
-      <app-paper
-      id="faq0"
-       title="{{'home.faq.1' | translate}}"
-       desc="{{'home.faq.r1' | translate}}"></app-paper>
-      <app-paper
-      id="faq1"
-      title="{{'home.faq.2' | translate}}"
-      desc="{{'home.faq.r2' | translate}}">
-      </app-paper>
-      <app-paper
-      id="faq2"
-      title="{{'home.faq.3' | translate}}"
-      desc="{{'home.faq.r3' | translate}}">
-      </app-paper>
-      <app-paper
-      id="faq3"
-      title="{{'home.faq.4' | translate}}"
-      desc="{{'home.faq.r4' | translate}}"></app-paper>
-      <app-paper
-      id="faq4"
-      title="{{'home.faq.5' | translate}}"
-      desc="{{'home.faq.r5' | translate}}">
-      </app-paper>
-      <app-paper
-      id="faq5"
-      title="{{'home.faq.6' | translate}}"
-      desc="{{'home.faq.r6' | translate}}">
-      </app-paper>
-      <app-paper
-      id="faq6"
-      title="{{'home.faq.7' | translate}}"
-      desc="{{'home.faq.r7' | translate}}">
-      </app-paper>
-      <app-paper
-      id="faq7"
-      title="{{'home.faq.8' | translate}}"
-      desc="{{'home.faq.r8' | translate}}">
-      </app-paper>
+    <div class="faq-screen" *ngIf="faqShow" (click)="closeFaq()">
+      <app-paper title="{{'home.faq.'+(id) | translate}}" desc="{{'home.faq.r'+(id) | translate}}" (click)="stopPropagation($event)"></app-paper>
     </div>
-  </div>
+  </div> 
 </div>
-
-<!--
-     Preguntas que se muestran por defecto
-    <div class="col-12 col-lg-6 faq-box2 d-flex align-items-center justify-content-center">
-      <div>
-        <h3 class="text-center">{{'home.faq.prejuicios' | translate}}</h3>
-        <p class="d-flex align-items-center justify-content-center me"> {{'home.faq.title' | translate}}</p>
-
-        <div *ngIf="('lang' | translate)== 'es'; else elseBlock;">
-          <div *ngFor="let faq of faqEs"
-            class="faq-box2-list d-flex flex-column justify-content-center align-items-center">
-            <app-btn2 class="faq-btn" text="{{faq.question}}"></app-btn2>
-          </div>
-        </div>
-        <ng-template #elseBlock>
-          <div *ngFor="let faq of faqEn"
-            class="faq-box2-list d-flex flex-column justify-content-center align-items-center">
-            <app-btn2 class="faq-btn" text="{{faq.question}}"></app-btn2>
-          </div>
-        </ng-template>
-      </div>
-    </div>
-
-  
-    <div class="faq-screen">
-      <div *ngIf="('lang' | translate)== 'es'; else elseBlock2;" class="d-flex flex-column align-items-center">
-        <div *ngFor="let faq of faqEs; index as i">
-          <app-paper id="faq{{i}}" [title]="faq.question" [desc]="faq.answer">
-          </app-paper>
-        </div>
-      </div>
-      <ng-template #elseBlock2 class="d-flex flex-column align-items-center">
-        <div *ngFor="let faq of faqEn; index as i">
-          <app-paper id="faq{{i}}" title="{{faq.question}}" desc="{{faq.answer}}">
-          </app-paper>
-        </div>
-      </ng-template>
-
-    </div>
-
-  </div>
-</div> -->

@@ -2,25 +2,25 @@
   <div class="parallax">
     <div class="row">
       <div class="col-12 col-lg-6 order-2 order-lg-1  parallax-box1">
-        <div class="parallax-box1-nft d-none d-lg-flex flex-column align-items-center">
-          <img src="../../../../assets/img/picture/nft-parts/hellzel-head.png" class="forehead" alt="parallax-img">
-          <img src="../../../../assets/img/picture/nft-parts/brain.png" class="brain-one" alt="parallax-img">
-          <img src="../../../../assets/img/picture/nft-parts/hellzel.png" class="face hellzel" alt="parallax-img">
-        </div>
-        <div class="parallax-box1-nft-movil d-flex d-lg-none flex-column align-items-center" id="head1">
-          <img src="../../../../assets/img/picture/nft-parts/hellzel-head.png" class="forehead"  alt="parallax-img">
-          <img src="../../../../assets/img/picture/nft-parts/brain.png" class="brain-one"   alt="parallax-img">
-          <img src="../../../../assets/img/picture/nft-parts/hellzel.png" class="face hellzel"  alt="parallax-img">
+        <div class="parallax-box1-nft d-flex flex-column align-items-center">
+          <img src="../../../../assets/img/picture/nft-parts/hellzel-head.png" class="forehead" alt="parallax-img"
+            appDynamicClasses visibleClass="forehead-active">
+          <img src="../../../../assets/img/picture/nft-parts/brain.png" class="brain-one" alt="parallax-img"
+            appDynamicClasses visibleClass="active">
+          <img src="../../../../assets/img/picture/nft-parts/hellzel.png" class="face hellzel" alt="parallax-img"
+            appDynamicClasses visibleClass="hellzel-active">
         </div>
       </div>
       <div class="col-12 col-lg-6 order-1 order-lg-2 parallax-box2 d-none d-lg-block" id="paper1">
         <div class="parallax-box2-container d-flex align-items-center justify-content-center">
-          <app-title-sub-p id="papern1" title="Hellzel" sub="{{'home.brain.title1' | translate}}" info1="{{'home.brain.p1' | translate}}"></app-title-sub-p>
+          <app-title-sub-p id="papern1" title="Hellzel" sub="{{'home.brain.title1' | translate}}"
+            info1="{{'home.brain.p1' | translate}}"></app-title-sub-p>
         </div>
       </div>
       <div class="col-12 col-lg-6 order-1 order-lg-2 parallax-box2 d-flex d-lg-none" id="paper1">
         <div class="parallax-box2-container-movil d-flex align-items-center justify-content-center">
-          <app-title-sub-p id="papern1" title="Hellzel" sub="{{'home.brain.title1' | translate}}" info1="{{'home.brain.p1' | translate}}"></app-title-sub-p>
+          <app-title-sub-p id="papern1" title="Hellzel" sub="{{'home.brain.title1' | translate}}"
+            info1="{{'home.brain.p1' | translate}}"></app-title-sub-p>
         </div>
       </div>
     </div>
@@ -28,26 +28,25 @@
     <!-- ************************************************ -->
     <div class="row">
       <div class="col-12 parallax-box3">
-        <div class="parallax-box3-container" id="paper2">
+        <div class="parallax-box3-container" id="paper2" appDynamicClasses
+          visibleClass="parallax-box3-container-active">
           <div class="parallax-box3-container-one d-flex align-items-center justify-content-center">
             <div>
               <h3 class="text-center" id="diagnostico">{{'home.brain.title2' | translate}}</h3>
               <p class="info text-center">{{'home.brain.p2' | translate}}<br>
                 {{'home.brain.p2-b' | translate}}
-
               </p>
             </div>
           </div>
-          <div class="parallax-box3-container-two d-flex justify-content-center align-items-center ">
+          <div class="parallax-box3-container-two d-flex justify-content-center align-items-center" appDynamicClasses
+            visibleClass="active">
             <div class="diagnosis diagnosis-one">
               <ul>
-                <li>{{'home.brain.enfermedad1' | translate}}</li>
-                <li>{{'home.brain.enfermedad2' | translate}}</li>
-                <li>{{'home.brain.enfermedad3' | translate}}<br>
-                  {{'home.brain.enfermedad3-b' | translate}}</li>
-                <li>{{'home.brain.enfermedad4' | translate}}</li>
-                <li>{{'home.brain.enfermedad5' | translate}}<br>
-                  {{'home.brain.enfermedad5-b' | translate}}</li>
+                <li *ngFor="let item of ['','','','','']; index as i">
+                  <span>
+                    {{'home.brain.enfermedad'+(i+1) | translate}}
+                  </span>
+                </li>
               </ul>
             </div>
             <div class="brain d-flex">
@@ -55,12 +54,12 @@
             </div>
             <div class="diagnosis diagnosis-two">
               <ul>
-                <li>{{'home.brain.enfermedad6' | translate}}</li>
-                <li>{{'home.brain.enfermedad7' | translate}}</li>
-                <li>{{'home.brain.enfermedad8' | translate}}</li>
-                <li>{{'home.brain.enfermedad9' | translate}}</li>
-                <li>{{'home.brain.enfermedad10' | translate}}<br>
-                  {{'home.brain.enfermedad10-b' | translate}}</li>
+                <li *ngFor="let item of [6,7,8,9,10]">
+                  <span>
+                    {{'home.brain.enfermedad'+item | translate}}
+                  </span>
+                </li>
+
               </ul>
             </div>
           </div>
@@ -70,24 +69,17 @@
     <!-- ****************************************************************** -->
     <div class="row">
       <div class="col-12 col-lg-6 order-2 order-lg-1   parallax-box4">
-        <div class="parallax-box4-nft d-none d-lg-flex flex-column align-items-center">
+        <div class="parallax-box4-nft d-flex flex-column align-items-center" appDynamicClasses visibleClass="active">
           <img src="../../../../assets/img/picture/nft-parts/penny-head.png" class="forehead penny-head"
             alt="parallax-img">
           <img src="../../../../assets/img/picture/nft-parts/brain.png" class="brain-two" alt="parallax-img">
           <img src="../../../../assets/img/picture/nft-parts/penny.png" class="face penny" alt="parallax-img">
         </div>
-        <div class="parallax-box4-nft-movil d-flex d-lg-none flex-column align-items-center" >
-          <img src="../../../../assets/img/picture/nft-parts/penny-head.png" class="forehead penny-head"
-            alt="parallax-img">
-          <img src="../../../../assets/img/picture/nft-parts/brain.png" class="brain-two" alt="parallax-img">
-          <img src="../../../../assets/img/picture/nft-parts/penny.png" class="face penny" alt="parallax-img" id="head2">
-        </div>
       </div>
       <div class="col-12 col-lg-6 order-1 order-lg-2  parallax-box2 parallax-box5">
         <div class="parallax-box2-container parallax-box5-container d-flex align-items-center justify-content-center"
           id="paper3">
-          <app-title-sub-p title="Penny" sub="Ello"
-            info1="{{'home.brain.p3' | translate}}">
+          <app-title-sub-p title="Penny" sub="Ello" info1="{{'home.brain.p3' | translate}}">
           </app-title-sub-p>
         </div>
       </div>

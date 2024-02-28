@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
-import { CommonService } from 'src/app/common.service';
+import { CommonService } from 'src/app/services/common.service';
 import { PaisesSelectComponent } from '../paises-select/paises-select.component';
 import { Paises } from './paises';
 

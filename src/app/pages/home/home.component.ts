@@ -23,7 +23,6 @@ import * as $ from 'jquery';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
-  private anim: any;
   option: AnimationOptions = {
     path: '../../../assets/img/etc/animation/fire2.json',
   };
@@ -34,15 +33,9 @@ export class HomeComponent implements OnInit {
     loop: false,
   };
 
-  animationCreated(animationItem: AnimationItem): void {
-    // console.log(animationItem);
-  }
-  roapActive = false;
-
+  private anim: any;
+  roapActive: boolean = false;
   constructor(private title: Title) {
-    window.onscroll = function (e) {
-      // console.log(window.scrollY); // Value of scroll Y in px
-    };
     let localstorage = localStorage.getItem('value');
 
     if (localstorage == 'en') {
@@ -73,7 +66,7 @@ export class HomeComponent implements OnInit {
     this.anim.play();
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
   ngAfterViewInit(): void {
     var nft = new Swiper('.nft', {
       slidesPerView: 1,
@@ -86,9 +79,6 @@ export class HomeComponent implements OnInit {
       pagination: {
         clickable: true,
       },
-      // autoplay: {
-      //   delay: 2000,
-      // },
     });
   }
 }

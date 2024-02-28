@@ -293,20 +293,7 @@ h3 {
             }
           }
         }
-        .brain.active {
-          z-index: 10;
-          transition: z-index 1.15s;
-          img {
-            opacity: 1;
-            width: 100%;
-            transition: all 0.8s;
-            top: -2rem;
-            @media screen and (max-width: 992px) {
-              top: 0;
-              width: 70%;
-            }
-          }
-        }
+
         .diagnosis {
           position: relative;
           z-index: 10;
@@ -317,18 +304,19 @@ h3 {
           }
           &-one {
             transform: translateX(-195%);
-          }
+            -webkit-transform: translateX(-195%);
+            -moz-transform: translateX(-195%);
+            -ms-transform: translateX(-195%);
+            -o-transform: translateX(-195%);
+}
           &-two {
             transform: translateX(195%);
           }
-          &-one.active,
-          &-two.active {
-            transform: translateX(0);
-          }
+
           ul {
             list-style: none;
             padding-left: 0;
-            li {
+            li, li span {
               font-family: "Mr Dafoe";
               color: $red1;
               font-size: 2rem;
@@ -350,6 +338,9 @@ h3 {
               }
               @media screen and (max-width: 767px) {
                 font-size: 1.2rem;
+              }
+              span{
+                max-width: 130px;
               }
             }
           }
@@ -450,6 +441,27 @@ h3 {
             }
           }
         }
+        &.active{
+          .brain {
+            z-index: 10;
+            transition: z-index 1.15s;
+            img {
+              opacity: 1;
+              width: 100%;
+              transition: all 0.8s;
+              top: -2rem;
+              @media screen and (max-width: 992px) {
+                top: 0;
+                width: 70%;
+              }
+            }
+          }
+          .diagnosis-one,
+          .diagnosis-two {
+            transform: translateX(0) !important;
+
+}
+        }
       }
     }
   }
@@ -473,7 +485,7 @@ h3 {
         width: 447px;
         transform: translate(64px, 0);
         transition: transform 1s;
-      }
+}
       .brain-two {
         position: absolute;
         width: 280px;
@@ -538,8 +550,7 @@ h3 {
         }
       }
     }
-    &-nft.active,
-    &-nft-movil.active {
+    &-nft.active{
       .forehead {
         transition: transform 1s;
         transform: translate(64px, 127px);
@@ -569,3 +580,4 @@ h3 {
     }
   }
 }
+
