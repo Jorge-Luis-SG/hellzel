@@ -3,7 +3,7 @@
   <h3 class="text-center">{{'home.final.1' | translate}}</h3>
   <p class="text-center">{{'home.final.2' | translate}}</p>
   <div class="paper-container w-100 d-flex justify-content-center">
-    <img src="../../../assets/img/etc/letter.png" class="letter" alt="Open Trivia" (click)="openTrivia()">
+    <img src="../../../assets/img/etc/letter.webp" class="letter" alt="Open Trivia" (click)="openTrivia()">
     <div
       class="paper d-flex flex-column flex-md-row  align-items-center justify-content-initial justify-content-md-center  position-absolute">
       <div class="paper-box1" *ngIf="!showResult">
@@ -23,14 +23,14 @@
       </div>
       <div class="paper-box3" *ngIf="showResult">
         <h4>{{'home.final.3' | translate}}</h4>
-        <img src="../../../../assets/img/picture/nfts/{{'trivia.'+ id +'.nft'| translate}}.png">
+        <img src="../../../../assets/img/picture/nfts/{{'trivia.'+ id +'.nft'| translate}}.webp">
         <p>{{'trivia.'+ id +'.name'| translate}}</p>
         <app-btn text="Mint" routerLink="/mint"></app-btn>
       </div>
 
       <div class="next position-absolute d-flex flex-column align-items-center justify-content-center"
         (click)="generate()" *ngIf="!showResult">
-        <img src="../../../../assets/img/picture/finger.png">
+        <img src="../../../../assets/img/picture/finger.webp">
         <app-btn text="{{'next' | translate}}"></app-btn>
 
       </div>

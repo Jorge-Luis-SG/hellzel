@@ -32,7 +32,7 @@ h3 {
     position: relative;
     &::before {
       content: "";
-      background-image: url(../../../assets/img/backgrounds/bg1.png);
+      background-image: url(../../../assets/img/backgrounds/bg1.webp);
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -51,7 +51,7 @@ h3 {
     }
     &-box1 {
       &-container {
-        background-image: url(../../../assets/img/etc/contenedor1.png);
+        background-image: url(../../../assets/img/etc/contenedor1.webp);
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
@@ -121,7 +121,7 @@ h3 {
           }
         }
         @media screen and (max-width: 570px) {
-          background-image: url(../../../assets/img/etc/contenedor3.png);
+          background-image: url(../../../assets/img/etc/contenedor3.webp);
           height: 500px;
           max-width: 320px;
           margin: 0 auto;
@@ -192,10 +192,10 @@ h3 {
       background-repeat: no-repeat;
       bottom: -119px;
       height: 225px;
-      background-image: url(../../../assets/img/backgrounds/bg2-bottom.png);
+      background-image: url(../../../assets/img/backgrounds/bg2-bottom.webp);
     }
     &-container {
-      background-image: url(../../../assets/img/etc/heizzel-news.png);
+      background-image: url(../../../assets/img/etc/heizzel-news.webp);
       background-size: contain;
       background-repeat: no-repeat;
       height: 750px;
@@ -234,7 +234,7 @@ h3 {
           }
         }
         @media screen and (max-width: 767px) {
-          background-image: url(../../../assets/img/etc/heizzel-news3.png);
+          background-image: url(../../../assets/img/etc/heizzel-news3.webp);
           background-position-x: center;
           width: 1000px;
           height: 700px;
@@ -291,7 +291,7 @@ h3 {
     position: relative;
   }
   .section4 {
-    background-image: url(../../../assets/img/backgrounds/bg4.png);
+    background-image: url(../../../assets/img/backgrounds/bg4.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: center;
@@ -330,7 +330,7 @@ h3 {
     &-box1 {
       &-item {
         background-color: transparent;
-        background-image: url(../../../assets/img/etc/paper.png);
+        background-image: url(../../../assets/img/etc/paper.webp);
         background-size: contain;
         background-repeat: no-repeat;
         background-position-x: center;
@@ -472,7 +472,7 @@ h3 {
         }
         .card {
           background-color: transparent;
-          background-image: url(../../../assets/img/etc/contenedor2.png);
+          background-image: url(../../../assets/img/etc/contenedor2.webp);
           background-size: contain;
           background-repeat: no-repeat;
           background-position-x: center;
@@ -518,7 +518,7 @@ h3 {
             //CARD
             height: 450px;
             padding: 0 3rem;
-            background-image: url(../../../assets/img/etc/contenedor3.png);
+            background-image: url(../../../assets/img/etc/contenedor3.webp);
             margin-top: 2rem;
             ul {
               padding: 0;
@@ -580,7 +580,7 @@ h3 {
     }
   }
   .section6 {
-    background-image: url(../../../assets/img/backgrounds/bg6.png);
+    background-image: url(../../../assets/img/backgrounds/bg6.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -614,7 +614,7 @@ h3 {
     &-box1 {
       &-container {
         background-color: transparent;
-        background-image: url(../../../assets/img/etc/contenedor3.png);
+        background-image: url(../../../assets/img/etc/contenedor3.webp);
         background-size: contain;
         background-repeat: no-repeat;
         background-position-x: center;
@@ -752,7 +752,7 @@ h3 {
     }
     &-container {
       background-color: transparent;
-      background-image: url(../../../assets/img/etc/card.png);
+      background-image: url(../../../assets/img/etc/card.webp);
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
@@ -786,7 +786,7 @@ h3 {
         }
       }
       @media screen and (max-width: 992px) {
-        background-image: url(../../../assets/img/etc/card-movil.png);
+        background-image: url(../../../assets/img/etc/card-movil.webp);
         height: 900px;
         width: 400px;
         height: 640px;

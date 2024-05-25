@@ -2,7 +2,7 @@
   <swiper #swiper [config]="config" *ngIf="('lang' | translate)== 'es'; else elseBlock">
     <ng-template swiperSlide *ngFor="let slide of slidesEs">
       <div class="nft d-flex flex-column justify-content-center align-items-center">
-        <img src="../../../assets/img/picture/nfts/{{slide.nftImg}}.png" alt="{{slide.name}}" class="nft-img">
+        <img src="../../../assets/img/picture/nfts/{{slide.nftImg}}.webp" alt="{{slide.name}}" class="nft-img">
       </div>
       <h3>{{slide.name}}</h3>
     </ng-template>
@@ -11,7 +11,7 @@
     <swiper #swiper [config]="config" *ngIf="('lang' | translate)== 'en'">
       <ng-template swiperSlide *ngFor="let slide of slidesEn">
         <div class="nft d-flex flex-column justify-content-center align-items-center">
-          <img src="../../../assets/img/picture/nfts/{{slide.nftImg}}.png" alt="{{slide.name}}" class="nft-img">
+          <img src="../../../assets/img/picture/nfts/{{slide.nftImg}}.webp" alt="{{slide.name}}" class="nft-img">
         </div>
         <h3>{{slide.name}}</h3>
       </ng-template>
